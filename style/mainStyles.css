@@ -87,3 +87,50 @@
 .layanan-child img{
     width: 300px;
 }
+
+/* MAIN TESTIMONI SECTION */
+
+.testimoni-beranda{
+    padding: 60px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.desc-testimoni-beranda{
+    text-align: center;
+}
+
+.testimoni-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+}
+
+.testimoni-wrapper::-webkit-scrollbar {
+    display: none; 
+}
+
+.testimoni-card {
+    width: 300px; 
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    scroll-snap-align: start;
+    flex-shrink: 0; 
+    text-align: center;
+}
+.testimoni-card img{
+    position: relative;
+    z-index: 5;
+    padding-bottom: 40px;
+}
+
+.judul-testimoni{
+    font-weight: 700;
+}
