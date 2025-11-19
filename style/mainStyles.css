@@ -1,3 +1,4 @@
+/* MAIN BANNER SECTION */
 .banner-beranda{
     background-image: 
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
@@ -43,4 +44,11 @@
     border-radius: 30px;
 }
 
-
+/* MAIN  TENTANG SECTION*/
+.tentang-beranda{
+    padding: 60px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
