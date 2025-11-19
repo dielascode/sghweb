@@ -1,0 +1,72 @@
+/* MAIN BANNER SECTION */
+.banner-beranda{
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 160px 0;
+}
+.container-beranda{
+    padding: 10px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    color: white;
+}
+.sub-tag{
+    font-weight: 600;
+}
+
+.container-beranda .judul{
+    font-weight: 700;
+}
+
+.btn-main{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.btn-main-hijau{
+    padding: 10px 30px;
+    background-color: #303C1B;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+}
+.btn-main-hijau2{
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white;
+    border: 4px solid #303C1B;
+    border-radius: 30px;
+}
+
+/* MAIN  TENTANG SECTION*/
+.tentang-beranda{
+    padding: 60px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* MAIN LAYANAN SECTION */
+.layanan-beranda{
+    background-image: 
+        url('/images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 150px;
+}
+.grid-layanan-beranda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+}
+.layanan-child{
+    
+}

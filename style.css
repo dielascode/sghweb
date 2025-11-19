@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    top: 0;
+    font-family: 'Poppins';
+}
+#navbar{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
