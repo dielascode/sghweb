@@ -16,7 +16,8 @@
     color: white;
 }
 .sub-tag{
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .container-beranda .judul{
@@ -61,12 +62,28 @@
     background-position: center;
     padding: 60px 150px;
 }
+.desc-layanan-beranda{
+    text-align: center;
+}
 .grid-layanan-beranda {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px; 
     padding: 20px; 
+    /* align-items: center; */
+    justify-content: center;
 }
 .layanan-child{
-    
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.judul-layanan-child{
+    font-weight: 700;
+}
+.layanan-child img{
+    width: 300px;
 }
