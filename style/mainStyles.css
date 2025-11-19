@@ -139,15 +139,32 @@
 
 .contact-beranda{
     padding: 60px 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
 }
 
 .container-contact{
     display: flex;
+    gap: 30px;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+}
+.contact-left .judul-contact{
+    font-weight: 700;
+}
+
+.grid-contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
+}
+
+.tunggal-contact{
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    padding-bottom: 20px;
 }
 
 .faq-section {
