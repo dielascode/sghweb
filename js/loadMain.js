@@ -1,10 +1,12 @@
-// Load Navbar
-fetch("/components/pages/main.html")
-    .then(res => res.text())
-    .then(data => {
-        document.getElementById("main").innerHTML = data;
-    });
+loadPage("/components/pages/main.html");
 
+function loadPage(page) {
+    fetch(page)
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("content").innerHTML = data;
+        });
+}
 
 const faqs = document.querySelectorAll(".faq-item");
 
