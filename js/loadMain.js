@@ -1,4 +1,4 @@
-loadPage("/components/pages/hubungi.html");
+loadPage("/components/pages/main.html");
 
 function loadPage(page) {
     fetch(page)
@@ -16,3 +16,15 @@ faqs.forEach(item => {
     });
 });
 
+function openPopup(nama, harga, desc, img) {
+    document.getElementById("popup-nama").innerText = nama;
+    document.getElementById("popup-harga").innerText = harga;
+    document.getElementById("popup-desc").innerText = desc;
+    document.getElementById("popup-img").src = img;
+
+    document.getElementById("popup-produk").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popup-produk").style.display = "none";
+}

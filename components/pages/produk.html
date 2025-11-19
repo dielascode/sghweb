@@ -17,17 +17,54 @@
         <div class="produk-child">
             <img src="/images/image-1.jpg" alt="" srcset="">
             <p class="judul-produk-child">Melon</p>
-            <button class="btn-main-hijau">Detail Produk</button>
+            <button class="btn-main-hijau" onclick="openPopup(
+    'Melon',
+    'Rp.5.000',
+    'Nikmati kesegaran alami Melon SGH Polije, hasil panen dari sistem pertanian modern yang ramah lingkungan.',
+    '/images/image-1.jpg'
+)">Detail Produk</button>
+
         </div>
         <div class="produk-child">
             <img src="/images/image-1.jpg" alt="" srcset="">
             <p class="judul-produk-child">Melon</p>
-            <button class="btn-main-hijau">Detail Produk</button>
+            <button class="btn-main-hijau" onclick="openPopup(
+    'Melon',
+    'Rp.5.000',
+    'Nikmati kesegaran alami Melon SGH Polije, hasil panen dari sistem pertanian modern yang ramah lingkungan.',
+    '/images/image-1.jpg'
+)">Detail Produk</button>
+
         </div>
         <div class="produk-child">
             <img src="/images/image-1.jpg" alt="" srcset="">
             <p class="judul-produk-child">Melon</p>
-            <button class="btn-main-hijau">Detail Produk</button>
+            <button class="btn-main-hijau" onclick="openPopup(
+    'Melon',
+    'Rp.5.000',
+    'Nikmati kesegaran alami Melon SGH Polije, hasil panen dari sistem pertanian modern yang ramah lingkungan.',
+    '/images/image-1.jpg'
+)">Detail Produk</button>
+
         </div>
     </div>
 </section>
+<div id="popup-produk" class="popup-overlay">
+    <div class="popup-box">
+        <span class="popup-close" onclick="closePopup()">×</span>
+
+        <div class="popup-content">
+            <img id="popup-img" src="" alt="produk">
+
+            <div class="popup-info">
+                <h2 id="popup-nama">NAMA PRODUK</h2>
+                <p id="popup-harga" class="harga">Rp.0</p>
+                <p id="popup-desc">
+                    Deskripsi produk akan muncul di sini.
+                </p>
+
+                <button class="btn-pesan">Pesan Sekarang</button>
+            </div>
+        </div>
+    </div>
+</div>
