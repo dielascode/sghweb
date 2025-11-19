@@ -1,4 +1,4 @@
-loadPage("/components/pages/produk.html");
+loadPage("/components/pages/hubungi.html");
 
 function loadPage(page) {
     fetch(page)
