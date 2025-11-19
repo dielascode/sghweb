@@ -52,3 +52,21 @@
     align-items: center;
     gap: 40px;
 }
+
+/* MAIN LAYANAN SECTION */
+.layanan-beranda{
+    background-image: 
+        url('/images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 150px;
+}
+.grid-layanan-beranda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+}
+.layanan-child{
+    
+}
