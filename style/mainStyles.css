@@ -134,3 +134,86 @@
 .judul-testimoni{
     font-weight: 700;
 }
+
+/* MAIN CONTACT BERANDA */
+
+.contact-beranda{
+    padding: 60px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.container-contact{
+    display: flex;
+}
+
+.faq-section {
+    background: #48692E; /* warna hijau seperti gambar */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 550px;
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.faq-desc {
+    margin: 10px 0 25px;
+    opacity: 0.9;
+}
+
+/* Box utama FAQ */
+.faq-item {
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* Tombol FAQ */
+.faq-question {
+    width: 100%;
+    padding: 18px 20px;
+    background: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+/* Panah */
+.faq-question .arrow {
+    transition: transform 0.3s ease;
+}
+
+/* Isi jawaban */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background: white;
+    color: #333;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+/* Saat dibuka */
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    padding: 15px 20px 20px;
+}
+
+.faq-item.active .arrow {
+    transform: rotate(180deg);
+}
