@@ -71,20 +71,20 @@
             <h2 class="judul-contact">KONSULTASI GRATIS</h2>
             <p>Dapatkan layanan konsultasi gratis seputar teknologi Smart Greenhouse. Tim kami siap membantu menjawab
                 pertanyaan Anda mengenai sistem, instalasi, maupun pengelolaannya.</p>
-            <form action="" method="post">
+            <form onsubmit="sendToWA(event)">
                 <div class="grid-contact-beranda">
                     <div>
                         <label for="">Nama</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="" id="nama">
                     </div>
                     <div>
                         <label for="">Email</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="" id="email">
                     </div>
                 </div>
                 <div class="tunggal-contact-beranda">
                     <label for="">Pesan</label>
-                    <textarea name="" id="" cols="20" rows="10"></textarea>
+                    <textarea name="" id="pesan" cols="20" rows="10"></textarea>
                 </div>
 
                 <button type="submit" class="btn-main-hijau">Kirim</button>

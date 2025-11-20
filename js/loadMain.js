@@ -32,3 +32,17 @@ function openPopup(nama, harga, desc, img) {
 function closePopup() {
     document.getElementById("popup-produk").style.display = "none";
 }
+
+
+function sendToWA(e) {
+    e.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+    const pesan = document.getElementById("pesan").value;
+
+    const text = `Halo, saya ${nama}%0AEmail: ${email}%0APesan:%0A${pesan}`;
+    const nomor = "6285732444518"; 
+
+    window.open(`https://wa.me/${nomor}?text=${text}`);
+}
