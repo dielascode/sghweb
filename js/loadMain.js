@@ -1,4 +1,4 @@
-loadPage("/components/pages/main.html");
+loadPage("/components/pages/galeri.html");
 
 function loadPage(page) {
     fetch(page)
