@@ -1,13 +1,20 @@
 /* MAIN BANNER SECTION */
-.banner-beranda{
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+.banner-beranda {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('/images/banner.jpg');
     background-size: cover;
     background-position: center;
     padding: 160px 0;
+    width: 100%;
 }
-.container-beranda{
+
+.banner-beranda,
+.container-beranda {
+    box-sizing: border-box;
+}
+
+.container-beranda {
     padding: 10px 150px;
     display: flex;
     flex-direction: column;
@@ -15,29 +22,31 @@
     text-align: center;
     color: white;
 }
-.sub-tag{
+
+.sub-tag {
     font-weight: 700;
     font-size: 20px;
 }
 
-.container-beranda .judul{
+.container-beranda .judul {
     font-weight: 700;
 }
 
-.btn-main{
+.btn-main {
     display: flex;
     gap: 80px;
     justify-content: center;
 }
 
-.btn-main-hijau{
+.btn-main-hijau {
     padding: 10px 30px;
     background-color: #303C1B;
     color: white;
     border: 0;
     border-radius: 30px;
 }
-.btn-main-hijau2{
+
+.btn-main-hijau2 {
     padding: 10px 30px;
     background-color: transparent;
     color: white;
@@ -46,7 +55,7 @@
 }
 
 /* MAIN  TENTANG SECTION*/
-.tentang-beranda{
+.tentang-beranda {
     padding: 60px 150px;
     display: flex;
     justify-content: center;
@@ -55,25 +64,28 @@
 }
 
 /* MAIN LAYANAN SECTION */
-.layanan-beranda{
-    background-image: 
+.layanan-beranda {
+    background-image:
         url('/images/bg2.jpg');
     background-size: cover;
     background-position: center;
     padding: 60px 150px;
 }
-.desc-layanan-beranda{
+
+.desc-layanan-beranda {
     text-align: center;
 }
+
 .grid-layanan-beranda {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    padding: 20px; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
     /* align-items: center; */
     justify-content: center;
 }
-.layanan-child{
+
+.layanan-child {
     background-color: white;
     border-radius: 20px;
     padding: 20px;
@@ -81,16 +93,18 @@
     flex-direction: column;
     gap: 10px;
 }
-.judul-layanan-child{
+
+.judul-layanan-child {
     font-weight: 700;
 }
-.layanan-child img{
+
+.layanan-child img {
     width: 300px;
 }
 
 /* MAIN TESTIMONI SECTION */
 
-.testimoni-beranda{
+.testimoni-beranda {
     padding: 60px 150px;
     display: flex;
     flex-direction: column;
@@ -98,7 +112,8 @@
     align-items: center;
     gap: 40px;
 }
-.desc-testimoni-beranda{
+
+.desc-testimoni-beranda {
     text-align: center;
 }
 
@@ -112,63 +127,72 @@
 }
 
 .testimoni-wrapper::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
 
 .testimoni-card {
-    width: 300px; 
+    width: 300px;
     background: white;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     scroll-snap-align: start;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     text-align: center;
 }
-.testimoni-card img{
+
+.testimoni-card img {
     position: relative;
     z-index: 5;
     padding-bottom: 40px;
 }
 
-.judul-testimoni{
+.judul-testimoni {
     font-weight: 700;
 }
 
 /* MAIN CONTACT BERANDA */
 
-.contact-beranda{
+.contact-beranda {
     padding: 60px 150px;
 }
 
-.container-contact{
+.container-contact {
     display: flex;
     gap: 30px;
+    width: 100%;
 }
 
-.contact-left{
+.contact-left {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
-.contact-left .judul-contact{
+
+.contact-left .judul-contact {
     font-weight: 700;
 }
 
-.grid-contact{
+.grid-contact-beranda {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 20px;
+    gap: 20px;
 }
 
-.tunggal-contact{
+.grid-contact-beranda input {
+    width: 100%;
+}
+
+.tunggal-contact-beranda {
     display: flex;
     flex-direction: column;
-    width: 93%;
+    width: 100%;
     padding-bottom: 20px;
 }
 
 .faq-section {
-    background: #48692E; /* warna hijau seperti gambar */
+    background: #48692E;
     color: white;
     padding: 40px 20px;
     border-radius: 10px;
@@ -185,52 +209,124 @@
     opacity: 0.9;
 }
 
-/* Box utama FAQ */
-.faq-item {
-    background: white;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    overflow: hidden;
+
+
+/* ============ RESPONSIVE TABLET (max-width: 992px) ============ */
+@media (max-width: 992px) {
+
+    .container-beranda,
+    .tentang-beranda,
+    .layanan-beranda,
+    .testimoni-beranda,
+    .contact-beranda {
+        padding: 30px 30px;
+    }
+
+    .grid-layanan-beranda {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tentang-beranda {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-contact {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+
+    .faq-section {
+        max-width: 100%;
+    }
 }
 
-/* Tombol FAQ */
-.faq-question {
-    width: 100%;
-    padding: 18px 20px;
-    background: white;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: left;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
+
+
+/* ============ RESPONSIVE HP (max-width: 768px) ============ */
+@media (max-width: 768px) {
+
+    .container-beranda {
+        padding: 20px 30px;
+    }
+
+    .btn-main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tentang-beranda {
+        padding: 40px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-layanan-beranda {
+        grid-template-columns: 1fr;
+    }
+
+    .layanan-child img {
+        width: 100%;
+    }
+
+    .testimoni-wrapper {
+        padding: 10px;
+    }
+
+    .testimoni-card {
+        width: 250px;
+    }
+
+    .container-contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .grid-contact-beranda {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-contact-beranda input {
+        width: 100%;
+    }
+
+    .faq-section h2 {
+        font-size: 22px;
+    }
 }
 
-/* Panah */
-.faq-question .arrow {
-    transition: transform 0.3s ease;
-}
+/* ============ RESPONSIVE HP KECIL (max-width: 480px) ============ */
+@media (max-width: 480px) {
 
-/* Isi jawaban */
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 20px;
-    background: white;
-    color: #333;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-}
+    .banner-beranda {
+        padding: 100px 0;
 
-/* Saat dibuka */
-.faq-item.active .faq-answer {
-    max-height: 300px;
-    padding: 15px 20px 20px;
-}
+    }
 
-.faq-item.active .arrow {
-    transform: rotate(180deg);
+    .right-beranda img {
+        width: 350px;
+    }
+
+    .container-beranda .sub-tag {
+        font-size: 18px;
+    }
+
+    .container-beranda .judul {
+        font-size: 22px;
+    }
+
+    .layanan-child {
+        padding: 15px;
+    }
+
+    .testimoni-card {
+        width: 220px;
+        padding: 15px;
+    }
 }

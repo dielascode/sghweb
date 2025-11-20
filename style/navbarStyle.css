@@ -1,22 +1,43 @@
-.navbar{
-    padding: 10px 50px;
-    background-color: #303C1B;
+.navbar-custom {
+    background-color: #303C1B !important;
+    padding: 10px 30px;
 }
 
-.navbar .logo-sgh img{
+.navbar-custom #logo-sgh img {
     width: 100px;
 }
 
-.navbar .logo-polije img{
+.navbar-custom #logo-polije img {
     width: 40px;
 }
 
-.navbar-nav{
+.navbar-custom .navbar-nav {
     gap: 10px;
 }
 
-.navbar-nav .nav-item .nav-link{
-    color: #ffffff;
+.navbar-custom .nav-link {
+    color: #ffffff !important;
     font-size: 1rem;
 }
 
+.navbar-custom .nav-link:hover {
+    color: #c7d8b2 !important; 
+}
+
+.navbar-custom .dropdown-menu {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.navbar-custom .dropdown-item {
+    padding: 10px 15px;
+}
+
+.navbar-custom .dropdown-item:hover {
+    background-color: #e7f1dc;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    filter: invert(1);
+}
