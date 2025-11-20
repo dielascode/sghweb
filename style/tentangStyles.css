@@ -15,3 +15,56 @@
     text-align: center;
     color: white;
 }
+.profil-container .teks-item{
+    padding: 10px 150px;
+    margin-top: 30px;
+    }
+
+
+.image-item{
+    padding: 40px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.image-item img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.visi-container{
+    padding: 30px 150px;
+    display: flex;
+    gap: 30px;
+}
+
+.visi-item {
+    /* padding: 40px 150px; */
+    background-color: #556B2F;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px 30px;
+    color: white;
+    width: 50%;
+}
+.misi-item {
+    /* padding: 40px 150px; */
+    background-color: #556B2F;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px 30px;
+    color: white;
+    width: 50%;
+}
+.struktur-container{
+    padding: 30px 150px;
+    margin-top: 30px;
+}
+.struktur-item img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}

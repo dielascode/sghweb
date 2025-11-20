@@ -1,4 +1,4 @@
-loadPage("/components/pages/galeri.html");
+loadPage("/components/pages/tentang.html");
 
 function loadPage(page) {
     fetch(page)
