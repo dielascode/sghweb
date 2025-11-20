@@ -8,17 +8,43 @@
             <li class="nav-item">
                 <a class="nav-link" href="#" onclick="loadPage('/components/pages/tentang.html')">Tentang</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" onclick="loadPage('pages/main.html')">Layanan</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="mitraDropdown" role="button"
+                    data-bs-toggle="dropdown">
+                    Layanan
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="mitraDropdown">
+                    <li><a class="dropdown-item" href="#" onclick="loadPage('/components/pages/layanan-magang.html')">Magang</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="loadPage('/components/pages/layanan-penelitian.html')">Penelitian</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="loadPage('/components/pages/layanan-praktik.html')">Praktikum</a></li>
+                </ul>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="#" onclick="loadPage('/components/pages/produk.html')">Produk</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" onclick="loadPage('pages/main.html')">Mitra</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="mitraDropdown" role="button"
+                    data-bs-toggle="dropdown">
+                    Mitra
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="mitraDropdown">
+                    <li><a class="dropdown-item" href="#" onclick="loadPage('/components/pages/mitra-daftar.html')">Daftar Mitra</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="loadPage('/components/pages/mitra-panduan.html')">Bennefit dan Panduan</a></li>
+                </ul>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" onclick="loadPage('pages/main.html')">Informasi</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="mitraDropdown" role="button"
+                    data-bs-toggle="dropdown">
+                    Informasi
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="mitraDropdown">
+                    <li><a class="dropdown-item" href="#" onclick="loadPage('/components/pages/berita.html')">Berita</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="loadPage('/components/pages/event.html')">Event</a></li>
+                </ul>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" onclick="loadPage('/components/pages/galeri.html')">Galeri</a>
