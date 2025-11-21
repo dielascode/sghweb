@@ -1,13 +1,14 @@
-.banner-tentang{
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+.banner-tentang {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('/images/banner.jpg');
     background-size: cover;
     background-position: center;
     padding: 160px 0;
     height: 200px;
 }
-.container-tentang{
+
+.container-tentang {
     padding: 10px 150px;
     display: flex;
     flex-direction: column;
@@ -15,28 +16,28 @@
     text-align: center;
     color: white;
 }
-.profil-container .teks-item{
+
+.profil-container .teks-item {
     padding: 10px 150px;
     margin-top: 30px;
-    }
+}
 
 
-.image-item{
+.image-item {
     padding: 40px 150px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.image-item img{
+.image-item img {
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
-.visi-container{
+.visi-container {
     padding: 30px 150px;
     display: flex;
     gap: 30px;
@@ -46,25 +47,91 @@
     /* padding: 40px 150px; */
     background-color: #556B2F;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px 30px;
     color: white;
     width: 50%;
 }
+
 .misi-item {
     /* padding: 40px 150px; */
     background-color: #556B2F;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px 30px;
     color: white;
     width: 50%;
 }
-.struktur-container{
+
+.struktur-container {
     padding: 30px 150px;
     margin-top: 30px;
 }
-.struktur-item img{
+
+.struktur-item img {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 992px) {
+    .banner-tentang {
+        padding: 160px 0;
+        height: 150px;
+    }
+
+    .container-tentang {
+        padding: 10px 50px;
+    }
+
+    .profil-container .teks-item {
+        padding: 10px 50px;
+    }
+
+    .image-item {
+        padding: 20px 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .visi-container {
+        padding: 20px 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .visi-item, .misi-item {
+        width: 100%;
+    }
+
+    .struktur-container {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-tentang {
+        padding: 160px 0;
+        height: 120px;
+    }
+
+    .container-tentang {
+        padding: 10px 20px;
+    }
+
+    .profil-container .teks-item {
+        padding: 10px 20px;
+    }
+
+    .image-item {
+        padding: 10px 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .visi-container {
+        padding: 10px 20px;
+    }
+
+    .struktur-container {
+        padding: 10px 20px;
+    }
 }
