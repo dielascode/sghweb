@@ -1,13 +1,14 @@
-.banner-produk{
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+.banner-produk {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('/images/banner.jpg');
     background-size: cover;
     background-position: center;
     padding: 160px 0;
     height: 200px;
 }
-.container-produk{
+
+.container-produk {
     padding: 10px 150px;
     display: flex;
     flex-direction: column;
@@ -16,30 +17,32 @@
     color: white;
 }
 
-.desc-produk{
+.desc-produk {
     padding: 10px 150px;
     text-align: center;
     padding-top: 60px;
 }
-.desc-produk .btn-produk{
+
+.desc-produk .btn-produk {
     display: flex;
     padding-top: 40px;
     justify-content: center;
     gap: 30px;
 }
 
-.produk-container{
+.produk-container {
     padding: 10px 150px;
     margin-bottom: 50px;
 }
 
 .grid-produk {
     display: flex;
-    gap: 20px; 
-    padding: 20px; 
+    gap: 20px;
+    padding: 20px;
     justify-content: center;
 }
-.produk-child{
+
+.produk-child {
     background-color: white;
     box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
@@ -49,10 +52,12 @@
     gap: 10px;
     text-align: center;
 }
-.judul-produk-child{
+
+.judul-produk-child {
     font-weight: 700;
 }
-.produk-child img{
+
+.produk-child img {
     width: 300px;
 }
 
@@ -62,7 +67,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     display: none;
     justify-content: center;
     align-items: center;
@@ -87,8 +92,7 @@
 }
 
 .popup-content img {
-    width: 45%;
-    border-radius: 15px;
+    max-width: 100%;
 }
 
 /* INFO PRODUK */
@@ -141,14 +145,22 @@
         padding: 10px 50px;
     }
 
-    .desc-produk .btn-produk{
+    .desc-produk .btn-produk {
         flex-wrap: wrap;
-        gap: 20px; 
+        gap: 20px;
     }
 
     .grid-produk {
         flex-wrap: wrap;
-        gap: 20px; 
-        padding: 20px; 
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .popup-content {
+        flex-wrap: wrap;
+    }
+    .popup-content img {
+        width: 100%;
+        padding-top: 30px;
     }
 }
