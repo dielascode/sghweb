@@ -156,6 +156,13 @@
         padding: 20px;
     }
 
+    
+    .popup-content img {
+        width: 100%;
+        padding-top: 30px;
+    }
+}
+@media (max-width: 768px) {
     .popup-content {
         flex-wrap: wrap;
     }
