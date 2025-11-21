@@ -209,7 +209,10 @@
     opacity: 0.9;
 }
 
-
+.accordion-body{
+    display: flex;
+    color: black;
+}
 
 /* ============ RESPONSIVE TABLET (max-width: 992px) ============ */
 @media (max-width: 992px) {
