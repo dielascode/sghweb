@@ -1,5 +1,5 @@
 .navbar-custom {
-    background-color: #303C1B !important;
+    background-color: #ffffffff !important;
     padding: 10px 30px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .navbar-custom .nav-link {
-    color: #ffffff !important;
+    color: #000000 !important;
     font-size: 1rem;
 }
 
