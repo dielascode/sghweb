@@ -1,4 +1,4 @@
-.banner-penelitian{
+.banner-panduan{
     background-image: 
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
         url('/images/banner.jpg');
@@ -9,16 +9,11 @@
     margin: 80px 20px 0 20px;
     border-radius: 20px;
 }
-.container-penelitian{
+.container-panduan{
     padding: 10px 150px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: center;
     color: white;
-}
-.penelitian-container .paragraf-item .foto-item{
-    padding: 10px 150px;
-    margin-top: 30px;
-    
 }
