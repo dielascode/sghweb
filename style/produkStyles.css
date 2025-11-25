@@ -6,6 +6,8 @@
     background-position: center;
     padding: 160px 0;
     height: 200px;
+    margin: 80px 20px 0 20px;
+    border-radius: 20px;
 }
 
 .container-produk {
@@ -17,28 +19,36 @@
     color: white;
 }
 
-.desc-produk {
-    padding: 10px 150px;
-    text-align: center;
-    padding-top: 60px;
-}
-
-.desc-produk .btn-produk {
-    display: flex;
-    padding-top: 40px;
-    justify-content: center;
-    gap: 30px;
-}
 
 .produk-container {
-    padding: 10px 150px;
+    padding: 60px 150px;
     margin-bottom: 50px;
-}
-
-.grid-produk {
     display: flex;
     gap: 20px;
-    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produk-container .desc-produk {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.produk-container .desc-produk h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+/* .desc-produk, .grid-produk {
+    width: 50%;
+} */
+
+
+.grid-produk {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
     justify-content: center;
 }
 
@@ -58,7 +68,7 @@
 }
 
 .produk-child img {
-    width: 300px;
+    width: auto;
 }
 
 .popup-overlay {
