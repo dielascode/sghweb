@@ -6,6 +6,8 @@
     background-position: center;
     padding: 160px 0;
     height: 200px;
+    margin: 80px 20px 0 20px;
+    border-radius: 20px;
 }
 .container-magang{
     padding: 10px 150px;
@@ -14,4 +16,34 @@
     gap: 20px;
     text-align: center;
     color: white;
+}
+.magang1-container{
+    padding: 40px 150px;
+    display: flex;
+    gap: 20px;
+}
+.magang2-container{
+    padding: 60px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+.left-magang{
+    flex: 3;
+}
+.right-magang{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+.btn-right-magang {
+    padding: 10px 30px;
+    background-color: #303C1B;
+    color: white;
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
 }
