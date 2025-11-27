@@ -1,7 +1,7 @@
-.banner-event{
+.banner-panduan{
     background-image: 
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url('/images/banner.jpg');
+        url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
     padding: 160px 0;
@@ -9,7 +9,7 @@
     margin: 80px 20px 0 20px;
     border-radius: 20px;
 }
-.container-event{
+.container-panduan{
     padding: 10px 150px;
     display: flex;
     flex-direction: column;

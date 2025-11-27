@@ -1,7 +1,7 @@
 .banner-berita{
     background-image: 
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url('/images/banner.jpg');
+        url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
     padding: 160px 0;
@@ -18,49 +18,109 @@
     color: white;
 }
 
-/* 1. WADAH GRID (3 Baris x 2 Kolom) */
-.wadah-utama {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+.page {
+  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 150px;
 }
 
-/* 2. KARTU (Card) */
-.card {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+.news-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
 }
 
-/* Efek Hover: Kartu naik saat disentuh mouse */
-.card:hover {
-    transform: translateY(-5px);
+.news-image-wrapper {
+  flex: 0 0 260px;
 }
 
-/* Gambar di dalam kartu */
-.card img {
+.news-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.news-content {
+  padding: 20px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.news-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.news-description {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #4b5563;
+  max-width: 100%;
+}
+
+.news-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.news-date .label {
+  font-weight: 600;
+}
+
+.news-date .value {
+  font-weight: 600;
+}
+
+.news-button {
+  padding: 10px 28px;
+  border-radius: 999px;
+  background: #3e7c3a;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(34, 197, 94, 0.35);
+  white-space: nowrap;
+}
+
+.news-button:hover {
+  background: #336731;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(22, 163, 74, 0.4);
+}
+
+.news-button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(22, 163, 74, 0.4);
+}
+
+.popup-detail-berita-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
-
-/* Konten Teks */
-.card-content {
-    padding: 20px;
-}
-
-.card h3 {
-    margin-top: 0;
-    color: #2c3e50;
-}
-
-.card p {
-    color: #7f8c8d;
-    line-height: 1.6;
-}
-
