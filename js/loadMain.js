@@ -79,8 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function tutupPopup() {
     document.getElementById('popup-detail-berita').style.display = "none";
 }
-</script>
-
 
 
 function sendToWA(e) {
