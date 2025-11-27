@@ -1,7 +1,7 @@
 .banner-tentang {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/images/sect-tentang/tentangbanner.jpg');
+        url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
     padding: 140px 0;
@@ -74,7 +74,7 @@ font-weight: 700;
     font-size: 2.5rem;
 }
 .visi-misi-left h2 span{
-     font-weight: 700;
+    font-weight: 700;
     font-size: 2.5rem;
     color: #87c51d;
 }
