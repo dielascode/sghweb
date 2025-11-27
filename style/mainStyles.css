@@ -2,7 +2,7 @@
 .banner-beranda {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-        url('/images/banner.jpg');
+        url('/images/sect-tentang/tentangbanner.jpg');
     background-size: cover;
     background-position: center;
     padding: 160px 0;
