@@ -42,6 +42,9 @@
 }
 
 @media (max-width: 992px) {
+    .banner-galeri{
+        padding: 100px 0;
+    }
     .gallery-container{
         padding: 40px 70px;
     }
