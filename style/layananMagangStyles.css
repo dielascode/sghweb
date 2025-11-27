@@ -20,41 +20,126 @@
 }
 .magang1-container{
     padding: 50px 150px;
+    margin-top: 30px;
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 50px;
 }
-.magang1-item{
-    height: 250px;
+.magang1-left{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.magang1-left h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #87c51d;
+}
+.magang1-left h1 span{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color:black;
+}
+.magang1-right img{
+    height: 100%;
+    border-radius: 10px;
+    
 }
 .magang2-container{
-    
-    padding-right: 150px;
-    padding-left: 150px;
-    padding-bottom: 50px;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+     padding: 50px 150px;
 
 }
-.left-magang{
-    flex:3 ;
-    
-    
-}
-.right-magang{
-    flex: 1;
+.magang2-langkah{
+    padding: 50px 0px 50px 110px; /* tidak terlalu jauh kiri */
+    position: relative;
     display: flex;
-    flex-direction:column;
-    gap: 20px;
+    flex-direction: column;
+    gap: 20px; 
+    margin-left: 80;
+    
+
 }
-.btn-right-magang {
+
+.title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+
+}
+.subtitle{
+    text-align: center;
+    font-size: 36px;
+    color: #87c51d;
+    font-weight: 700;
+}
+.step{
+    display: flex;
+    align-items: flex-start;
+    
+    
+}
+.circle{
+    
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #303C1B;
+    margin-right: 20px;
+    position: relative;
+}
+.circle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 65px; /* panjang garis antar circle */
+    background: black;
+}
+.step:last-child .circle::after {
+    display: none;
+}
+.step p{
+    width: 80%;
+    line-height: 1.6;
+    color: black;
+}
+.magang3-container{
+    padding: 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.magang3-left h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: black;
+}
+.magang3-left h1 span{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #87c51d;
+}
+.magang3-right{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+.btn-magang-hijau{
     padding: 10px 30px;
+    
+    width: 230px;
     background-color: #303C1B;
     color: white;
-    
     border: 0;
     border-radius: 30px;
 }

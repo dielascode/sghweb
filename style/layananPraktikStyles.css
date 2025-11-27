@@ -17,3 +17,129 @@
     text-align: center;
     color: white;
 }
+.praktik1-container{
+    padding: 50px 150px;
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+}
+.praktik1-left{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.praktik1-left h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color:black;
+}
+.praktik1-left h1 span{
+    font-weight: 700;
+    font-size: 2.5rem;
+    
+    color: #87c51d;
+}
+.praktik1-right img{
+    height: 100%;
+    border-radius: 10px;
+    
+}
+.praktik2-container{
+     padding: 50px 150px;
+
+}
+.praktik2-langkah{
+    padding: 50px 0px 50px 110px; /* tidak terlalu jauh kiri */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin-left: 80;
+    
+
+}
+
+.title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+
+}
+.subtitle{
+    text-align: center;
+    font-size: 36px;
+    color: #87c51d;
+    font-weight: 700;
+}
+.step{
+    display: flex;
+    align-items: flex-start;
+    
+    
+}
+.circle{
+    
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #303C1B;
+    margin-right: 20px;
+    position: relative;
+}
+.circle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 65px; /* panjang garis antar circle */
+    background: black;
+}
+.step:last-child .circle::after {
+    display: none;
+}
+.step p{
+    width: 80%;
+    line-height: 1.6;
+    color: black;
+}
+.praktik3-container{
+    padding: 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.praktik3-left h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: black;
+}
+.praktik3-left h1 span{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #87c51d;
+}
+.praktik3-right{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+.btn-praktik-hijau{
+    padding: 10px 30px;
+    
+    width: 230px;
+    background-color: #303C1B;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+}
