@@ -21,11 +21,11 @@
 /* 1. WADAH GRID (3 Baris x 2 Kolom) */
 .wadah-utama {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 Kolom */
-    gap: 30px; /* Jarak antar kartu */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     padding: 40px;
-    max-width: 1200px; /* Lebar maksimal konten */
-    margin: 0 auto; /* Posisi tengah layar */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* 2. KARTU (Card) */
@@ -45,8 +45,8 @@
 /* Gambar di dalam kartu */
 .card img {
     width: 100%;
-    height: 220px; /* Tinggi gambar tetap */
-    object-fit: cover; /* Gambar dipotong rapi */
+    height: 220px;
+    object-fit: cover;
 }
 
 /* Konten Teks */
