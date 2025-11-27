@@ -18,48 +18,47 @@
     color: white;
 }
 /* DAFTAR MITRA SECTION */
-.daftar-mitra {
+.daftar-container {
     background-color: #ffffff;
     padding: 60px 150px;
 }
 
-.daftar-mitra .desc-daftar-mitra {
+.daftar-container .desc-daftar-mitra {
     display: flex;
     gap: 40px;
     width: 100%;
 }
 
-.daftar-mitra .desc-daftar-mitra h1 {
+.daftar-container .desc-daftar-mitra h1 {
     font-weight: 700;
     font-size: 2.5rem;
     width: 50%;
 }
 
-.daftar-mitra .desc-daftar-mitra p {
+.daftar-container .desc-daftar-mitra p {
     width: 50%;
 }
 
-.daftar-mitra .desc-daftar-mitra span {
+.daftar-container .desc-daftar-mitra span {
     color: #5aca04;
 }
 
-.daftar-mitra .desc-daftar-mitra span {
+.daftar-container .desc-daftar-mitra span {
     width: 100%;
     flex-direction: column;
     gap: 20px;
-    /*aligh-items: center; */
     justify-self: unset;
 }
 
 /* CARD SECTION */
     /*WRAPPER */
-.mitra-ewindo {
+.ewindo-container {
     display: flex;
     justify-content: center;
     padding: 50px 20px;
 }
 
-.ewindo-card {
+.ewindo-container .ewindo-card {
     display: flex;
     align-items: center;
     max-width: 1300px;
@@ -68,7 +67,7 @@
 }
 
     /* LOGO */
-.logo-circle {
+.ewindo-container .logo-circle {
     width: 330px;
     height: 340px;
     border-radius: 50%;
@@ -80,7 +79,7 @@
     position: relative;
 }
 
-.logo-circle img {
+.ewindo-container .logo-circle img {
     width: 270px;
     height: 280px;
     object-fit: contain;
@@ -89,7 +88,7 @@
 }
 
 
-.ewindo-right {
+.ewindo-container .ewindo-right {
     position: relative;
     flex: 1;
     height: 280px;
@@ -100,19 +99,19 @@
 }
 
     /* BG FOTO */
-.ewindo-bg {
+.ewindo-container .ewindo-bg {
     position: absolute;
     inset: 0;
 }
 
-.ewindo-bg img {
+.ewindo-container .ewindo-bg img {
     background: linear-gradient(to right, rgba(30, 70, 30, 0.85),rgba(30,70,30,0.85));
     width: 100%;
     height: 100%;
     object-fit: cover;
 
 }
-.bg-gradient {
+.ewindo-container .bg-gradient {
     position: absolute; 
     top: 0;
     left: 0;
@@ -122,27 +121,93 @@
 }
 
     /* CONTENT */
-.ewindo-content {
+.ewindo-container .ewindo-content {
     position: relative;
     z-index: 3;
     padding: 40px 45px;
     padding-left: 300px; 
 }
 
-.ewindo-content h2 {
+.ewindo-container .ewindo-content h2 {
     color: white;
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 12px;
 }
 
-.ewindo-content h2 span {
+.ewindo-container .ewindo-content h2 span {
     color: #c5ff4c;
 }
 
-.ewindo-content p {
+.ewindo-container .ewindo-content p {
     color: white;
     font-size: 16px;
     line-height: 1.6;
 }
 
+/* KEUNTUNGAN MITRA SECTION */
+    .mitra-container {
+    background-color: #ffffff;
+    padding:10px 0;
+    }
+   
+    .mitra-container .mitra-item h2 {
+        padding: 0px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.0rem;
+        width:  100%;
+        justify-content: center;
+    }
+
+    .mitra-container .mitra-item h2 span {
+        padding: 0px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 3.0rem;
+        width: 100%;
+        color: #5aca04;
+
+    }
+    .mitra-container .mitra-item p {
+        padding: 30px 150px;
+        text-align: center;
+    }
+
+    /* BENEFIT SECTION */
+    .benefit-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .benefit-container .benefit-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+        margin: 0 10px;
+    }
+
+    .benefit-container .benefit-item p {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .benefit-container .benefit-item img {
+        max-width: 150px;
+        height: auto;
+        display: block;
+    }
+
+    .benefit-container .benefit-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
