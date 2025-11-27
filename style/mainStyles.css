@@ -79,6 +79,7 @@
     gap: 20px;
     align-items: flex-end;
 }
+
 .tentang-beranda .tentang-beranda-left .tentang-beranda-left-left .image-dua {
     width: 80%;
     border-radius: 20px;
@@ -100,13 +101,14 @@
 .desc-layanan-beranda h1 {
     font-weight: 700;
     font-size: 2.5rem;
-    width: 100% ;
+    width: 100%;
 }
 
 .desc-layanan-beranda span {
     color: #5aca04;
 }
-.desc-layanan-beranda p{
+
+.desc-layanan-beranda p {
     width: 100%;
 }
 
@@ -126,7 +128,7 @@
     align-items: center;
 }
 
-.layanan-child .layanan-child-desc{
+.layanan-child .layanan-child-desc {
     width: 50%;
 }
 
@@ -246,7 +248,7 @@
     opacity: 0.9;
 }
 
-.accordion-body{
+.accordion-body {
     display: flex;
     color: black;
 }
@@ -260,6 +262,10 @@
     .testimoni-beranda,
     .contact-beranda {
         padding: 30px 30px;
+    }
+
+    .banner-beranda {
+        padding: 75px 0;
     }
 
     .grid-layanan-beranda {
@@ -307,6 +313,15 @@
 
     .grid-layanan-beranda {
         grid-template-columns: 1fr;
+    }
+
+    .layanan-child {
+        flex-direction: column;
+
+    }
+
+    .layanan-child .layanan-child-desc {
+        width: 100%;
     }
 
     .layanan-child img {
@@ -368,5 +383,15 @@
     .testimoni-card {
         width: 220px;
         padding: 15px;
+    }
+
+    .desc-layanan-beranda {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .desc-layanan-beranda h1 {
+        font-size: 1.5rem;
     }
 }
