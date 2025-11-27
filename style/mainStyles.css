@@ -2,7 +2,7 @@
 .banner-beranda {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-        url('/images/sect-tentang/tentangbanner.jpg');
+        url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
     padding: 160px 0;
@@ -105,7 +105,7 @@
 }
 
 .desc-layanan-beranda span {
-    color: #5aca04;
+    color: #87c51d;
 }
 
 .desc-layanan-beranda p {

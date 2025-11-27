@@ -1,7 +1,7 @@
 .banner-galeri{
     background-image: 
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url('/images/banner.jpg');
+        url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
     padding: 160px 0;
@@ -17,7 +17,18 @@
     text-align: center;
     color: white;
 }
+.judul-galeri {
+    margin-top: 40px;
+    color: #10111A; 
+    font-family: 'poppins';
+    font-size: 40px; 
+    font-weight: 700; 
+    text-align: center; 
+}
 
+.green-text {
+    color: #87c51d; 
+}
 .gallery-container{
     padding: 40px 150px;
     display: grid;

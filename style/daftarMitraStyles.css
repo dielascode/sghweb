@@ -1,7 +1,7 @@
 .banner-daftar {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/images/banner.jpg');
+        url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
     padding: 140px 0;
@@ -17,3 +17,132 @@
     text-align: center;
     color: white;
 }
+/* DAFTAR MITRA SECTION */
+.daftar-mitra {
+    background-color: #ffffff;
+    padding: 60px 150px;
+}
+
+.daftar-mitra .desc-daftar-mitra {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.daftar-mitra .desc-daftar-mitra h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    width: 50%;
+}
+
+.daftar-mitra .desc-daftar-mitra p {
+    width: 50%;
+}
+
+.daftar-mitra .desc-daftar-mitra span {
+    color: #5aca04;
+}
+
+.daftar-mitra .desc-daftar-mitra span {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    /*aligh-items: center; */
+    justify-self: unset;
+}
+
+/* CARD SECTION */
+    /*WRAPPER */
+.mitra-ewindo {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.ewindo-card {
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    position: relative;
+}
+
+    /* LOGO */
+.logo-circle {
+    width: 330px;
+    height: 340px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;            
+    position: relative;
+}
+
+.logo-circle img {
+    width: 270px;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+
+.ewindo-right {
+    position: relative;
+    flex: 1;
+    height: 280px;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-left: -120px;      
+    z-index: 3;
+}
+
+    /* BG FOTO */
+.ewindo-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.ewindo-bg img {
+    background: linear-gradient(to right, rgba(30, 70, 30, 0.85),rgba(30,70,30,0.85));
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.bg-gradient {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 50, 0, 0.50);
+}
+
+    /* CONTENT */
+.ewindo-content {
+    position: relative;
+    z-index: 3;
+    padding: 40px 45px;
+    padding-left: 300px; 
+}
+
+.ewindo-content h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.ewindo-content h2 span {
+    color: #c5ff4c;
+}
+
+.ewindo-content p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
