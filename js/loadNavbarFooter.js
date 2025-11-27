@@ -11,3 +11,13 @@ fetch("/components/top_bottom/footer.html")
     .then(data => {
         document.getElementById("footer").innerHTML = data;
     });
+
+
+    document.querySelectorAll('.navbar-nav .nav-link, .dropdown-item').forEach(function(el){
+        el.addEventListener('click', function () {
+            var navbar = document.querySelector('.navbar-collapse');
+            var bsCollapse = new bootstrap.Collapse(navbar, { toggle: false });
+            bsCollapse.hide();
+        });
+    });
+
