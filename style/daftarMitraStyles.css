@@ -1,7 +1,7 @@
 .banner-daftar {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/images/banner.jpg');
+        url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
     padding: 140px 0;
@@ -9,8 +9,7 @@
     margin: 80px 20px 0 20px;
     border-radius: 20px;
 }
-
-.container-daftar {
+.container-daftar{
     padding: 10px 150px;
     display: flex;
     flex-direction: column;
@@ -18,7 +17,6 @@
     text-align: center;
     color: white;
 }
-
 /* DAFTAR MITRA SECTION */
 .daftar-mitra {
     background-color: #ffffff;
@@ -139,3 +137,4 @@
     font-size: 16px;
     line-height: 1.6;
 }
+
