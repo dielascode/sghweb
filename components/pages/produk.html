@@ -22,84 +22,18 @@
         <h2><span>Varian</span> Produk Kami</h2>
         <p>Kami menyediakan satu jenis produk utama, yaitu buah melon dengan enam varian unggulan yang ditanam di Smart Green House untuk kualitas terbaik.</p>
     </div>
-    <div class="grid-produk">
-        <div class="produk-child">
-            <img src="/images/image-1.jpg" alt="" srcset="">
-            <p class="judul-produk-child">Melon</p>
-            <button class="btn-main-hijau" onclick="openPopup(
-                'Melon',
-                'Rp.5.000',
-                'Nikmati kesegaran alami Melon SGH Polije, hasil panen dari sistem pertanian modern yang ramah lingkungan.',
-                '/images/image-1.jpg'
-            )">Detail Produk</button>
-
-        </div>
-        <div class="produk-child">
-            <img src="/images/image-1.jpg" alt="" srcset="">
-            <p class="judul-produk-child">Melon</p>
-            <button class="btn-main-hijau" onclick="openPopup(
-                'Melon',
-                'Rp.5.000',
-                'Nikmati kesegaran alami Melon SGH Polije, hasil panen dari sistem pertanian modern yang ramah lingkungan.',
-                '/images/image-1.jpg'
-            )">Detail Produk</button>
-
-        </div>
-        <div class="produk-child">
-            <img src="/images/image-1.jpg" alt="" srcset="">
-            <p class="judul-produk-child">Melon</p>
-            <button class="btn-main-hijau" onclick="openPopup(
-                'Melon',
-                'Rp.5.000',
-                'Nikmati kesegaran alami Melon SGH Polije, hasil panen dari sistem pertanian modern yang ramah lingkungan.',
-                '/images/image-1.jpg'
-            )">Detail Produk</button>
-
-        </div>
-        <div class="produk-child">
-            <img src="/images/image-1.jpg" alt="" srcset="">
-            <p class="judul-produk-child">Melon</p>
-            <button class="btn-main-hijau" onclick="openPopup(
-                'Melon',
-                'Rp.5.000',
-                'Nikmati kesegaran alami Melon SGH Polije, hasil panen dari sistem pertanian modern yang ramah lingkungan.',
-                '/images/image-1.jpg'
-            )">Detail Produk</button>
-
-        </div>
-        <div class="produk-child">
-            <img src="/images/image-1.jpg" alt="" srcset="">
-            <p class="judul-produk-child">Melon</p>
-            <button class="btn-main-hijau" onclick="openPopup(
-                'Melon',
-                'Rp.5.000',
-                'Nikmati kesegaran alami Melon SGH Polije, hasil panen dari sistem pertanian modern yang ramah lingkungan.',
-                '/images/image-1.jpg'
-            )">Detail Produk</button>
-
-        </div>
-        <div class="produk-child">
-            <img src="/images/image-1.jpg" alt="" srcset="">
-            <p class="judul-produk-child">Melon</p>
-            <button class="btn-main-hijau" onclick="openPopup(
-                'Melon',
-                'Rp.5.000',
-                'Nikmati kesegaran alami Melon SGH Polije, hasil panen dari sistem pertanian modern yang ramah lingkungan.',
-                '/images/image-1.jpg'
-            )">Detail Produk</button>
-
-        </div>
+    <div class="grid-produk" id="produkContainer">
     </div>
 </section>
 <div id="popup-produk" class="popup-overlay">
-    <div class="popup-box">
-        <span class="popup-close" onclick="closePopup()">×</span>
-        <div class="popup-content">
-            <img id="popup-img" src="" alt="produk">
-            <div class="popup-info">
-                <h2 id="popup-nama">NAMA PRODUK</h2>
-                <p id="popup-harga" class="harga">Rp.0</p>
-                <p id="popup-desc">
+    <div class="popup-box-produk">
+        <span class="popup-close-produk" onclick="closePopup()">×</span>
+        <div class="popup-content-produk">
+            <img id="popup-img-produk" src="" alt="produk">
+            <div class="popup-info-produk">
+                <h2 id="popup-nama-produk">NAMA PRODUK</h2>
+                <p id="popup-harga-produk">Rp.0<span>/kg</span></p>
+                <p id="popup-desc-produk">
                     Deskripsi produk akan muncul di sini.
                 </p>
                 <button class="btn-pesan">Pesan Sekarang</button>

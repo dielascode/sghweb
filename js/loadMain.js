@@ -12,6 +12,9 @@ function loadPage(page) {
             if (page.includes("berita")) {
                 loadBerita();
             }
+            if (page.includes("produk")) {
+                loadProduk();
+            }
         });
 }
 
