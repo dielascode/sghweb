@@ -1,0 +1,51 @@
+[
+    {
+        "image": "/images/galeri/satu.png",
+        "caption": "Memetik Melon"
+    },
+    {
+        "image": "/images/galeri/dua.png",
+        "caption": "Bangunan SGH"
+    },
+    {
+        "image": "/images/galeri/tiga.png",
+        "caption": "Penelitian oleh mahasiswa "
+    },
+    {
+        "image": "/images/galeri/empat.png",
+        "caption": "Buah melon "
+    },
+    {
+        "image": "/images/galeri/lima.png",
+        "caption": "Kegiatan Pembibitan Tanaman"
+    },
+    {
+        "image": "/images/galeri/enam.png",
+        "caption": "Pemeriksaan Tanaman"
+    },
+    {
+        "image": "/images/galeri/tujuh.png",
+        "caption": "Observasi Bibit Tanaman"
+    },
+    {
+        "image": "/images/galeri/delapan.png",
+        "caption": "Kunjungan KEMDIKTISAINTEK "
+    },
+    {
+        "image": "/images/galeri/sembilan.png",
+        "caption": "Observasi Tanaman"
+    },
+    {
+        "image": "/images/galeri/tujuh.png",
+        "caption": "Smart Green House Interior View"
+    },
+    {
+        "image": "/images/galeri/delapan.png",
+        "caption": "Smart Green House Interior View"
+    },
+    {
+        "image": "/images/galeri/sembilan.png",
+        "caption": "Smart Green House Interior View"
+    }
+    
+]

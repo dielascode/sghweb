@@ -18,59 +18,59 @@
     color: white;
 }
 /* DAFTAR MITRA SECTION */
-.daftar-mitra {
+.daftar-container {
     background-color: #ffffff;
     padding: 60px 150px;
 }
 
-.daftar-mitra .desc-daftar-mitra {
+.daftar-container .desc-daftar-mitra {
     display: flex;
-    gap: 40px;
+    gap: px;
     width: 100%;
 }
 
-.daftar-mitra .desc-daftar-mitra h1 {
+.daftar-container .desc-daftar-mitra h1 {
     font-weight: 700;
     font-size: 2.5rem;
     width: 50%;
 }
 
-.daftar-mitra .desc-daftar-mitra p {
+.daftar-container .desc-daftar-mitra p {
     width: 50%;
 }
 
-.daftar-mitra .desc-daftar-mitra span {
-    color: #5aca04;
+.daftar-container .desc-daftar-mitra span {
+    color: #87c51d;
 }
 
-.daftar-mitra .desc-daftar-mitra span {
+.daftar-container .desc-daftar-mitra span {
     width: 100%;
     flex-direction: column;
     gap: 20px;
-    /*aligh-items: center; */
     justify-self: unset;
 }
 
 /* CARD SECTION */
     /*WRAPPER */
-.mitra-ewindo {
+.ewindo-container {
     display: flex;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 1% 10px;
 }
 
-.ewindo-card {
+.ewindo-container .ewindo-card {
     display: flex;
     align-items: center;
     max-width: 1300px;
-    width: 100%;
+    width: 150%;
+    height: 100%;
     position: relative;
 }
 
     /* LOGO */
-.logo-circle {
-    width: 330px;
-    height: 340px;
+.ewindo-container .logo-circle {
+    width: 500px;
+    height: 480px;
     border-radius: 50%;
     background: white;
     display: flex;
@@ -80,39 +80,39 @@
     position: relative;
 }
 
-.logo-circle img {
-    width: 270px;
-    height: 280px;
+.ewindo-container .logo-circle img {
+    width: 390px;
+    height: 395px;
     object-fit: contain;
     border-radius: 50%;
-    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+    box-shadow: 0 25px 30px rgba(0,0,0,0.10);
 }
 
-
-.ewindo-right {
+.ewindo-container .ewindo-right {
     position: relative;
     flex: 1;
-    height: 280px;
-    border-radius: 40px;
+    height: 350px;
+    width: 1px;
+    border-radius: 60px;
     overflow: hidden;
     margin-left: -120px;      
     z-index: 3;
 }
 
     /* BG FOTO */
-.ewindo-bg {
+.ewindo-container .ewindo-bg {
     position: absolute;
     inset: 0;
 }
 
-.ewindo-bg img {
+.ewindo-container .ewindo-bg img {
     background: linear-gradient(to right, rgba(30, 70, 30, 0.85),rgba(30,70,30,0.85));
     width: 100%;
     height: 100%;
     object-fit: cover;
 
 }
-.bg-gradient {
+.ewindo-container .bg-gradient {
     position: absolute; 
     top: 0;
     left: 0;
@@ -122,27 +122,446 @@
 }
 
     /* CONTENT */
-.ewindo-content {
+.ewindo-container .ewindo-content {
     position: relative;
     z-index: 3;
-    padding: 40px 45px;
-    padding-left: 300px; 
+    padding: 85px 65px;
+    padding-left: 200px; 
 }
 
-.ewindo-content h2 {
+.ewindo-container .ewindo-content h2 {
     color: white;
-    font-size: 32px;
+    font-size: 31px;
     font-weight: 800;
     margin-bottom: 12px;
+    
+
 }
 
-.ewindo-content h2 span {
-    color: #c5ff4c;
+.ewindo-container .ewindo-content h2 span {
+    color: #9cd737;
 }
 
-.ewindo-content p {
+.ewindo-container .ewindo-content p {
     color: white;
     font-size: 16px;
     line-height: 1.6;
 }
 
+/* KEUNTUNGAN MITRA SECTION */
+    .mitra-container {
+    background-color: #ffffff;
+    padding:10px 0;
+    }
+   
+    .mitra-container .mitra-item h2 {
+        padding: 0px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.0rem;
+        width:  100%;
+        justify-content: center;
+    }
+
+    .mitra-container .mitra-item h2 span {
+        padding: 0px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 3.0rem;
+        width: 100%;
+        color: #5aca04;
+
+    }
+    .mitra-container .mitra-item p {
+        padding: 30px 150px;
+        text-align: center;
+    }
+
+    /* BENEFIT SECTION */
+    .benefit-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .benefit-container .benefit-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 20%;
+        margin: 0 15px;
+    }
+
+    .benefit-container .benefit-item p {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 15px;
+        min-height: 40px;
+        line-height: 1.2;
+    }
+
+    .benefit-container .benefit-item img {
+    max-width: 500px; 
+    height: auto;
+    display: block;
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+    }
+    .benefit-container .benefit-item:nth-child(1) img,
+    .benefit-container .benefit-item:nth-child(2) img {
+        max-width: 500px;
+    }
+    .benefit-container .benefit-item:nth-child(3) img,
+    .benefit-container .benefit-item:nth-child(4) img {
+        max-width: 160px;
+    }
+    .benefit-container .benefit-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+/* JOIN MITRA */
+    /* WRAPPER */
+    .join-mitra-container {
+        margin: 0;
+        text-align: center;
+        padding: 50px 50px;
+        background-color: #f4f4f4;
+    }
+
+    /* TITLE */
+    .join-mitra-container .desc-join-mitra h1 {
+        font-size: 2.2rem;
+        font-weight: 800; 
+        color: #000000;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    /* GARIS */
+    .join-mitra-container .garis-title {
+        border: none;
+        border-top: 4px solid #000000;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+       width: 70%;
+    }
+
+    /* PARAGRAF */
+    .join-mitra-container .desc-join-mitra p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #000000;
+        padding: 30px 150px;
+        margin: 0 auto 30px auto;
+        margin-top: 30px;
+    }
+    /*button*/
+    .join-mitra-container .button-mitra {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .cta-button .btn-main-hijau {
+        padding: 10px 28px;
+        border-radius: 999px;
+        background: #5aca04;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;
+        display: inline-block;
+        box-shadow: 0 10px 20px rgba(85, 121, 71, 0.45);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .cta-button .btn-main-hijau:hover {
+        background: #4a6a3e;
+        transform: translateY(-2px);
+        box-shadow: 0 16px 30px rgba(85, 121, 71, 0.6);
+    }
+
+    .cta-button.btn-main-hijau:active {
+        background: #3c5432;
+        transform: translateY(0);
+        box-shadow: 0 4px 10px rgba(85, 121, 71, 0.3);
+    }
+
+    /* ============ RESPONSIVE TABLET (max-width: 992px) ============ */
+    @media (max-width: 992px) {
+
+        .container-daftar,
+        .daftar-container,
+        .ewindo-container,
+        .mitra-container,
+        .benefit-container,
+        .join-mitra-container {
+            padding: 30px 30px;
+    }
+
+    .container-daftar {
+        padding: 10px 50px;
+    }
+
+    .daftar-container {
+        padding: 10px 50px;
+    }
+
+    .mitra-container .mitra-item p, 
+    .join-mitra-container .desc-join-mitra p {
+        padding: 50px 50px;
+    }
+
+    .daftar-container .desc-daftar-mitra {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .daftar-container .desc-daftar-mitra h1{
+        width: 100%; 
+        text-align: center;
+        padding: 30px 10px;
+    }
+
+    .daftar-container .desc-daftar-mitra p {
+        width: 100%; 
+        text-align: center; 
+        padding: 10px 5px;
+    }
+
+    .ewindo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+    min-height: 600px; 
+    }
+
+   .ewindo-container .ewindo-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-width: 900px; 
+    width: 90%; 
+    position: relative;
+    }
+
+   .ewindo-container .logo-circle {
+    width: 250px; 
+    height: 250px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    .ewindo-container .logo-circle img {
+    width: 75%; 
+    height: 75%;
+    object-fit: contain;
+    border-radius: 50%; 
+    }
+   
+    .ewindo-container .ewindo-right {
+    flex: 1;
+    height: 400px;
+    width: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    margin-top: -125px;
+    padding-top: 125px; 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
+    }
+
+   .ewindo-container .ewindo-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1; 
+    }
+
+    .ewindo-container .ewindo-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .ewindo-container .bg-gradient {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(30, 70, 30, 0.85);
+    z-index: 2; 
+    }
+
+    .ewindo-container .ewindo-content {
+    position: relative;
+    z-index: 3; 
+    padding: 30px 60px; 
+    color: white; 
+    text-align: left;
+    }
+
+    .ewindo-container .ewindo-content h2 {
+    color: white;
+    font-size: 30px; 
+    font-weight: 800;
+    margin-bottom: 12px;
+    }
+
+    .ewindo-container .ewindo-content h2 span {
+    color: #9cd737;
+    }
+
+    .ewindo-container .ewindo-content p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    }
+
+    .benefit-container {
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        padding: 40px 10px;
+    }
+    
+    .benefit-container .benefit-item {
+        width: 45%; 
+        margin: 15px 5px;
+    }
+    
+    .benefit-container .benefit-item p {
+        font-size: 1.1rem; 
+    }
+
+}
+
+    @media (max-width: 992px) {
+    .banner-daftar {
+        padding: 80px 0; 
+        margin: 60px 10px 0 10px;
+        height: auto;
+    }
+
+    .container-daftar,
+    .daftar-container,
+    .mitra-container .mitra-item p,
+    .join-mitra-container .desc-join-mitra p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .daftar-container .desc-daftar-mitra h1 {
+        font-size: 2rem; 
+    }
+
+    .ewindo-container {
+        padding: 30px 10px;
+        min-height: 500px;
+    }
+
+    .ewindo-container .ewindo-card {
+        width: 95%; 
+    }
+
+    .ewindo-container .logo-circle {
+        width: 180px; 
+        height: 180px;
+    }
+
+    .ewindo-container .logo-circle img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .ewindo-container .ewindo-right {
+        height: 300px; 
+        border-radius: 20px; 
+        margin-top: -90px; 
+        padding-top: 90px; 
+    }
+
+    .ewindo-container .ewindo-content {
+        padding: 20px 30px; 
+        text-align: center; 
+    }
+
+    .ewindo-container .ewindo-content h2 {
+        font-size: 24px;
+    }
+
+    .ewindo-container .ewindo-content p {
+        font-size: 15px;
+    }
+
+    .benefit-container {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    .benefit-container .benefit-item {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    
+    .join-mitra-container .desc-join-mitra h1 {
+        font-size: 1.8rem;
+    }
+    
+    .join-mitra-container .garis-title {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .ewindo-container {
+        padding: 20px 5px;
+        min-height: 450px;
+    }
+
+    .ewindo-container .ewindo-card {
+        width: 100%; 
+    }
+
+    .ewindo-container .logo-circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .ewindo-container .logo-circle img {
+        width: 65%;
+        height: 65%;
+    }
+
+    .ewindo-container .ewindo-right {
+        height: 250px;
+        border-radius: 15px;
+        margin-top: -70px;
+        padding-top: 70px;
+    }
+
+    .ewindo-container .ewindo-content {
+        padding: 15px 20px;
+    }
+
+    .ewindo-container .ewindo-content h2 {
+        font-size: 20px;
+    }
+
+    .ewindo-container .ewindo-content p {
+        font-size: 14px;
+    }
+}

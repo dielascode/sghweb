@@ -112,94 +112,63 @@
   box-shadow: 0 6px 16px rgba(22, 163, 74, 0.4);
 }
 
-/* ============================================
-   RESPONSIVE TABLET (max-width: 992px)
-   ============================================ */
-@media (max-width: 992px) {
-  .page {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 40px 60px;
-  }
-
-  .news-image-wrapper {
-    flex: 0 0 240px;
-  }
-
-}
-
-/* ============================================
-   RESPONSIVE HP (max-width: 768px)
-   ============================================ */
-@media (max-width: 768px) {
-  .page {
-    grid-template-columns: 1fr;
-    padding: 30px 40px;
-    gap: 24px;
-  }
-
-  .news-image-wrapper {
-    flex: 0 0 220px;
-  }
-
-  .news-content {
-    padding: 18px 24px 22px;
-  }
-
-  .news-title {
-    font-size: 1rem;
-  }
-
-  .news-description {
-    font-size: 0.85rem;
+.popup-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
     display: none;
-  }
-
-  .news-button {
-    padding: 9px 24px;
-    font-size: 0.85rem;
-  }
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
 }
 
-/* ============================================
-   RESPONSIVE HP KECIL (max-width: 480px)
-   ============================================ */
-@media (max-width: 480px) {
-  .page {
-    grid-template-columns: 1fr;
-    padding: 20px 16px;
-    gap: 20px;
-  }
+.popup-content img {
+    width: 450px;        
+    max-width: 100%;  
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
 
-  .news-image-wrapper {
-    flex: 0 0 200px;
-  }
 
-  .news-content {
-    padding: 16px 18px 20px;
-    gap: 8px;
-  }
+.popup-box {
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-  .news-title {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
+.popup-close {
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+}
 
-  .news-description {
-    font-size: 0.8rem;
-    line-height: 1.5;
-  }
-
-  .news-button {
-    padding: 8px 20px;
-    font-size: 0.8rem;
-    width: 100%;
-    text-align: center;
-  }
-
-  .news-footer {
+.popup-content {
+    display: flex;
     flex-direction: column;
-    align-items: stretch;
-  }
+    gap: 20px;
+}
 
+
+@media (max-width: 992px) {
+    .page {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 40px 100px;
+    }
+}
+@media (max-width: 768px) {
+    .page {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page {
+      grid-template-columns: 1fr;
+      padding: 40px 20px;
+    }
 }
