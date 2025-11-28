@@ -6,11 +6,11 @@ function loadPage(page) {
         .then(data => {
             document.getElementById("content").innerHTML = data;
 
-            if (page.includes("/components/pages/main.html")) {
-                loadTestimoni();
-            }
             if (page.includes("galeri")) {
                 loadGaleri();
+            }
+            if (page.includes("berita")) {
+                loadBerita();
             }
         });
 }
@@ -37,48 +37,6 @@ function closePopup() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-
-    // Ambil semua tombol selengkapnya
-    const buttons = document.querySelectorAll('.news-button');
-
-    // Popup
-    const popup = document.getElementById('popup-detail-berita');
-    const popupImg = document.getElementById('popup-detail-berita-img');
-    const popupDesc = document.getElementById('popup-detail-berita-desc');
-
-    if (!popup) {
-        console.error("Popup dengan id 'popup-detail-berita' tidak ditemukan.");
-        return;
-    }
-
-    // Event tiap tombol
-    buttons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const card = this.closest('.news-card');
-            const imgSrc = card.querySelector('.news-image').src;
-            const title = card.querySelector('.news-title').innerText;
-            const desc = card.querySelector('.news-description').innerText;
-
-            popupImg.src = imgSrc;
-            popupDesc.innerHTML = `<strong>${title}</strong><br><br>${desc}`;
-
-            popup.style.display = "flex";
-        });
-    });
-
-    // Tutup jika klik di luar box
-    popup.addEventListener('click', function(e) {
-        if (e.target === popup) {
-            tutupPopup();
-        }
-    });
-
-});
-
-// Fungsi tutup popup global
 function tutupPopup() {
     document.getElementById('popup-detail-berita').style.display = "none";
 }
