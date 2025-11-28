@@ -9,6 +9,9 @@ function loadPage(page) {
             if (page.includes("/components/pages/main.html")) {
                 loadTestimoni();
             }
+            if (page.includes("galeri")) {
+                loadGaleri();
+            }
         });
 }
 
