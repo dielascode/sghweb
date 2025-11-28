@@ -4,118 +4,19 @@
     </div>
 </section>
 <section>
-    <div class="page">
-        <div class="news-card">
-            <div class="news-image-wrapper">
-                <img src="images/berita/1.jpeg" alt="Foto kegiatan" class="news-image">
-            </div>
-
-            <div class="news-content">
-                <h2 class="news-title">POLIJE DAN PT EWINDO GELAR TANAM PERDANA BENIH MELON DI SMART GREEN HOUSE</h2>
-                <p class="news-description">Politeknik Negeri Jember (Polije) memulai kegiatan tanam perdana benih buah melon yang berlangsung di Teaching Factory (Tefa) Smart Green House
-                </p>
-
-                <div class="news-footer">
-                    <a href="#" class="news-button" id="detail-news">Selengkapnya</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="news-card">
-            <div class="news-image-wrapper">
-                <img src="images/berita/6.jpg" alt="Foto kegiatan" class="news-image">
-            </div>
-
-            <div class="news-content">
-                <h2 class="news-title">POLITEKNIK NEGERI JEMBER SAMBUT KUNJUNGAN SMK BUDI UTOMO JOMBANG UNTUK KERJA SAMA SMART FARMING</h2>
-                <p class="news-description">Politeknik Negeri Jember (Polije) menerima kunjungan dari SMK Budi Utomo Jombang dalam rangka penandatanganan Memorandum of Understanding (MoU) terkait pendampingan
-                </p>
-
-                <div class="news-footer">
-                    <a href="#" class="news-button" id="detail-news">Selengkapnya</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="news-card">
-            <div class="news-image-wrapper">
-                <img src="images/berita/7.jpg" alt="Foto kegiatan" class="news-image">
-            </div>
-
-            <div class="news-content">
-                <h2 class="news-title">JICA Kunjungi TePolije, Amati Inovasi Pembelajaran Berbasis Industri</h2>
-                <p class="news-description">Delegasi dari Japan International Cooperation Agency (JICA) melaksanakan kunjungan lapangan resmi ke sejumlah unit Teaching Factory (Tefa) di Politeknik Negeri
-                </p>
-
-                <div class="news-footer">
-                    <a href="#" class="news-button" id="detail-news">Selengkapnya</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="news-card">
-            <div class="news-image-wrapper">
-                <img src="images/berita/8.jpeg" alt="Foto kegiatan" class="news-image">
-            </div>
-
-            <div class="news-content">
-                <h2 class="news-title">Polije Terapkan Fingerprint dan Pelatihan Budidaya Melon untuk Warga Rambipuji</h2>
-                <p class="news-description">Politeknik Negeri Jember (Polije) melaksanakan program pengabdian masyarakat 2025 dengan menerapkan sistem fingerprint di Unit si dan Akuntansi (UPA) Pertanian
-                </p>
-
-                <div class="news-footer">
-                    <a href="#" class="news-button" id="detail-news">Selengkapnya</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="news-card">
-            <div class="news-image-wrapper">
-                <img src="images/berita/9.jpg" alt="Foto kegiatan" class="news-image">
-            </div>
-
-            <div class="news-content">
-                <h2 class="news-title">POLIJE TERIMA KUNJUNGAN PONPES MODERN SMK DARUL HIKMAH, TINJAU LANGSUNG DUA TEACHING FACTORY UNGGULAN</h2>
-                <p class="news-description">Politeknik Negeri Jember (Polije) menerima kunjungan dari Pondok Pesantren (Ponpes) Modern SMK Darul Hikmah dalam rangka studi tiru ke Teaching
-                </p>
-
-                <div class="news-footer">
-                    <a href="#" class="news-button" id="detail-news">Selengkapnya</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="news-card">
-            <div class="news-image-wrapper">
-                <img src="images/berita/5.jpg" alt="Foto kegiatan" class="news-image">
-            </div>
-
-            <div class="news-content">
-                <h2 class="news-title">DIRJEN SAINTEK KUNJUNGI POLIJE DORONG KOLABORASI DAERAH DAN PENGUATAN EKOSISTEM SAINS TEKNOLOGI</h2>
-                <p class="news-description">Politeknik Negeri Jember (Polije) menjadi tuan rumah dalam kunjungan Direktur Jenderal Sains dan Teknologi, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi
-                </p>
-
-                <div class="news-footer">
-                    <a href="#" class="news-button" id="detail-news">Selengkapnya</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    <div class="page" id="beritaContainer"></div>
 </section>
 
 
+<div id="popup-detail-berita" class="popup-overlay">
+    <div class="popup-box">
+        <span class="popup-close" onclick="tutupPopup()">×</span>
 
-<div id="popup-detail-berita" class="popup-detail-berita-overlay">
-    <div class="popup-detail-berita-box">
-        <span class="popup-detail-berita-close" onclick="tutupPopup()">×</span>
-        <div class="popup-detail-berita-content">
-            <img id="popup-detail-berita-img" src="" alt="">
-            <div class="popup-detail-berita-info">
-                <p id="popup-detail-berita-desc">
-                    Deskripsi  akan muncul di sini.
-                </p>
-                <button class="btn-pesan">Pesan Sekarang</button>
+        <div class="popup-content">
+            <img id="popup-img" src="" alt="">
+            <div class="popup-info">
+                <h2 id="popup-title"></h2>
+                <p id="popup-desc"></p>
             </div>
         </div>
     </div>
