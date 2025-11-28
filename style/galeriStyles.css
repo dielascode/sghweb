@@ -51,6 +51,33 @@
     text-align: center;
     padding-top: 20px;
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.page-btn, .page-number {
+    padding: 8px 15px;
+    border: none;
+    background: #e8e8e8;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.page-number.active {
+    background: #71c95b;
+    color: white;
+    font-weight: bold;
+}
+
+button:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
 
 @media (max-width: 992px) {
     .banner-galeri{
