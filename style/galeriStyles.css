@@ -1,6 +1,6 @@
-.banner-galeri{
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+.banner-galeri {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
@@ -9,7 +9,8 @@
     margin: 80px 20px 0 20px;
     border-radius: 20px;
 }
-.container-galeri{
+
+.container-galeri {
     padding: 10px 150px;
     display: flex;
     flex-direction: column;
@@ -17,40 +18,43 @@
     text-align: center;
     color: white;
 }
+
 .judul-galeri {
     margin-top: 40px;
-    color: #10111A; 
+    color: #10111A;
     font-family: 'poppins';
-    font-size: 40px; 
-    font-weight: 700; 
-    text-align: center; 
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .green-text {
-    color: #87c51d; 
+    color: #87c51d;
 }
-.gallery-container{
+
+.gallery-container {
     padding: 40px 150px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.gallery-container .gallery-item{
+.gallery-container .gallery-item {
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-container .gallery-item img{
+.gallery-container .gallery-item img {
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
-.caption{
+.caption {
     text-align: center;
     padding-top: 20px;
 }
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -58,7 +62,8 @@
     margin: 20px 0;
 }
 
-.page-btn, .page-number {
+.page-btn,
+.page-number {
     padding: 8px 15px;
     border: none;
     background: #e8e8e8;
@@ -80,23 +85,29 @@ button:disabled {
 
 
 @media (max-width: 992px) {
-    .banner-galeri{
+    .banner-galeri {
         padding: 100px 0;
     }
-    .gallery-container{
+
+    .gallery-container {
         padding: 40px 70px;
+    }
+
+    .judul-galeri {
+        font-size: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .gallery-container{
-        grid-template-columns: repeat(2, 1fr); 
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
         padding: 40px 40px;
     }
 }
+
 @media (max-width: 480px) {
-    .gallery-container{
-        grid-template-columns: 1fr; 
+    .gallery-container {
+        grid-template-columns: 1fr;
         padding: 20px 20px;
     }
 }
