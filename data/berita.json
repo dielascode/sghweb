@@ -40,5 +40,19 @@
         "title": "Implementasi Smart Green House di Berbagai Negara",
         "description": "Berbagai negara di dunia telah mulai mengimplementasikan teknologi Smart Green House untuk meningkatkan produksi pertanian mereka. Negara-negara seperti Belanda, Jepang, dan Amerika Serikat telah menunjukkan keberhasilan dalam penggunaan Smart Green House, yang dapat menjadi contoh bagi negara-negara lain yang ingin mengadopsi teknologi ini.",
         "date": "2024-06-12"
+    },
+    {
+        "id":"5",
+        "image": "/images/berita/8.jpeg",
+        "title": "Masa Depan Pertanian dengan Smart Green House",
+        "description": "Smart Green House merupakan langkah maju menuju masa depan pertanian yang lebih berkelanjutan dan efisien. Dengan terus berkembangnya teknologi, diharapkan Smart Green House akan semakin terjangkau dan dapat diadopsi oleh lebih banyak petani di seluruh dunia, membantu memenuhi kebutuhan pangan global yang terus meningkat.",
+        "date": "2024-05-18"
+    },
+    {
+        "id":"6",
+        "image": "/images/berita/9.jpg",
+        "title": "Implementasi Smart Green House di Berbagai Negara",
+        "description": "Berbagai negara di dunia telah mulai mengimplementasikan teknologi Smart Green House untuk meningkatkan produksi pertanian mereka. Negara-negara seperti Belanda, Jepang, dan Amerika Serikat telah menunjukkan keberhasilan dalam penggunaan Smart Green House, yang dapat menjadi contoh bagi negara-negara lain yang ingin mengadopsi teknologi ini.",
+        "date": "2024-06-12"
     }
 ]

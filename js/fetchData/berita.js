@@ -1,6 +1,6 @@
 let beritaData = [];
 let currentPageBerita = 1;
-const itemsPerPageBerita = 9;
+const itemsPerPageBerita = 6;
 
 function loadBerita() {
     fetch('/data/berita.json')
