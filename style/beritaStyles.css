@@ -90,7 +90,7 @@
 .news-button {
   padding: 10px 28px;
   border-radius: 999px;
-  background: #3e7c3a;
+  background: #556B2F;
   color: #ffffff;
   text-decoration: none;
   font-size: 0.86rem;
@@ -102,7 +102,7 @@
 }
 
 .news-button:hover {
-  background: #336731;
+  background: #556B2F;
   transform: translateY(-1px);
   box-shadow: 0 14px 30px rgba(22, 163, 74, 0.4);
 }
