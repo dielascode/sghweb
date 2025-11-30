@@ -66,7 +66,7 @@
     align-items: center;
 }
 
-.studibanding2-item{
+.studibanding2-item {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -85,7 +85,6 @@
 
 .studibanding3-langkah {
     padding: 50px 70px;
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -191,21 +190,33 @@
 
 /* Responsive */
 @media (max-width: 992px) {
+    .studibanding1-left {
+        width: 100%;
+
+    }
+
+    .studibanding1-left h1 {
+        font-size: 2.2rem;
+    }
+
+    .studibanding1-left h1 span {
+        font-size: 2.2rem;
+    }
 
     .studibanding1-container,
     .studibanding2-container,
     .studibanding3-container,
     .studibanding4-container {
-        padding: 30px 60px;
+        padding: 30px 30px;
     }
 
-    .studibanding1-container{
+    .studibanding1-container {
         align-items: center;
         justify-content: center;
         text-align: center;
     }
 
-    
+
     .studibanding2-container {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -213,7 +224,7 @@
     }
 
     .studibanding3-langkah {
-        padding: 30px;
+        padding: 0px;
     }
 
     .circle::after {
@@ -222,38 +233,102 @@
 }
 
 @media (max-width: 768px) {
+
+    .studibanding1-container,
+    .studibanding2-container,
+    .studibanding3-container,
+    .studibanding4-container {
+        padding: 30px 60px;
+    }
+
+    .studibanding1-left h1 {
+        font-size: 2.0rem;
+    }
+
+    .studibanding1-left h1 span {
+        font-size: 2.0rem;
+    }
+
     .studibanding2-container {
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         justify-content: center;
         width: 100%;
+
     }
 
-    .studibanding1-left , .studibanding1-right {
+    .studibanding1-left,
+    .studibanding1-right {
         width: 100%;
         text-align: center;
     }
 
     .circle {
 
-        width: 125px;
+        width: 130px;
         height: 45px;
 
     }
 
     .circle::after {
-        height: 140px;
+        height: 137px;
     }
 
     .studibanding4-container {
         display: flex;
         flex-direction: column;
     }
-    .studibanding4-right , .studibanding4-left {
+
+    .studibanding4-right,
+    .studibanding4-left {
         width: 100%;
         text-align: center;
     }
+     .studibanding4-left h1 {
+        font-size: 2.0rem;
+    }
+
+    .studibanding4-left h1 span {
+        font-size: 2.0rem;
+    }
 }
-@media (max-width: 480px){
-    
+
+@media (max-width: 480px) {
+    .banner-studibanding {
+        padding: 110px 0;
+    }
+
+    .container-studibanding {
+        padding: 10px 90px;
+    }
+
+    .studibanding1-left h1 {
+        font-size: 1.6rem;
+    }
+
+    .studibanding1-left h1 span {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .circle {
+        width: 190px;
+        height: 33px;
+    }
+
+    .circle::after {
+        height: 183px;
+    }
+
+    .studibanding4-left h1 {
+        font-size: 1.6rem;
+    }
+
+    .studibanding4-left h1 span {
+        font-size: 1.6rem;
+    }
+
 }
