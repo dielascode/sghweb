@@ -49,12 +49,22 @@
     border-radius: 30px;
 }
 
+.btn-main-hijau a{
+    text-decoration: none;
+    color: white;
+}
+
 .btn-main-hijau2 {
     padding: 10px 30px;
     background-color: transparent;
     color: white;
     border: 4px solid #303C1B;
     border-radius: 30px;
+}
+
+.btn-main-hijau2 a{
+    text-decoration: none;
+    color: white;
 }
 
 /* MAIN  TENTANG SECTION*/
