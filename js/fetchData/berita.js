@@ -103,7 +103,7 @@ function initPopupBerita(data) {
     });
 }
 
-function tutupPopup() {
+function tutupPopupProduk() {
     document.getElementById('popup-detail-berita').style.display = "none";
 }
 
