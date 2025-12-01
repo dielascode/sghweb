@@ -1,49 +1,61 @@
 [
     {
+        "id":1,
         "image": "/images/galeri/satu.png",
-        "caption": "Memetik Melon"
+        "caption": "Smart Green House Interior View"
     },
     {
+        "id":2,
         "image": "/images/galeri/dua.png",
-        "caption": "Bangunan SGH"
+        "caption": "Smart Green House Interior View"
     },
     {
+        "id":3,
         "image": "/images/galeri/tiga.png",
-        "caption": "Penelitian oleh mahasiswa "
+        "caption": "Smart Green House Interior View"
     },
     {
+        "id":4,
         "image": "/images/galeri/empat.png",
-        "caption": "Buah melon "
+        "caption": "Smart Green House Interior View"
     },
     {
+        "id":5,
         "image": "/images/galeri/lima.png",
-        "caption": "Kegiatan Pembibitan Tanaman"
+        "caption": "Smart Green House Interior View"
     },
     {
+        "id":6,
         "image": "/images/galeri/enam.png",
-        "caption": "Pemeriksaan Tanaman"
+        "caption": "Smart Green House Interior View"
     },
     {
+        "id":7,
         "image": "/images/galeri/tujuh.png",
-        "caption": "Observasi Bibit Tanaman"
+        "caption": "Smart Green House Interior View"
     },
     {
+        "id":8,
         "image": "/images/galeri/delapan.png",
-        "caption": "Kunjungan KEMDIKTISAINTEK "
+        "caption": "Smart Green House Interior View"
     },
     {
+        "id":9,
         "image": "/images/galeri/sembilan.png",
-        "caption": "Observasi Tanaman"
+        "caption": "Smart Green House Interior View"
     },
     {
+        "id":10,
         "image": "/images/galeri/tujuh.png",
         "caption": "Smart Green House Interior View"
     },
     {
+        "id":11,
         "image": "/images/galeri/delapan.png",
         "caption": "Smart Green House Interior View"
     },
     {
+        "id":12,
         "image": "/images/galeri/sembilan.png",
         "caption": "Smart Green House Interior View"
     }

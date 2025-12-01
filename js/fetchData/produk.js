@@ -9,7 +9,7 @@ function loadProduk() {
             produkData = data;
             currentPageProduk = 1;
             renderProduk();
-            renderPagination();
+            renderPaginationProduk();
             initPopupProduk(data);
         })
         .catch(err => console.error("Error loading produk:", err));
@@ -45,8 +45,8 @@ function renderProduk() {
     });
 }
 
-function renderPagination() {
-    const pag = document.getElementById("pagination");
+function renderPaginationProduk() {
+    const pag = document.getElementById("paginationProduk");
     if (!pag) return;
 
     pag.innerHTML = "";
@@ -54,24 +54,24 @@ function renderPagination() {
     const totalPages = Math.ceil(produkData.length / itemsPerPageProduk);
 
     pag.innerHTML += `
-        <button class="page-btn" ${currentPageProduk === 1 ? "disabled" : ""} onclick="goToPage(${currentPageProduk - 1})">Prev</button>
+        <button class="page-btn" ${currentPageProduk === 1 ? "disabled" : ""} onclick="goToPageProduk(${currentPageProduk - 1})">Prev</button>
     `;
 
     for (let i = 1; i <= totalPages; i++) {
         pag.innerHTML += `
-            <button class="page-number ${currentPageProduk === i ? "active" : ""}" onclick="goToPage(${i})">${i}</button>
+            <button class="page-number ${currentPageProduk === i ? "active" : ""}" onclick="goToPageProduk(${i})">${i}</button>
         `;
     }
 
     pag.innerHTML += `
-        <button class="page-btn" ${currentPageProduk === totalPages ? "disabled" : ""} onclick="goToPage(${currentPageProduk + 1})">Next</button>
+        <button class="page-btn" ${currentPageProduk === totalPages ? "disabled" : ""} onclick="goToPageProduk(${currentPageProduk + 1})">Next</button>
     `;
 }
 
-function goToPage(page) {
+function goToPageProduk(page) {
     currentPageProduk = page;
     renderProduk();
-    renderPagination();
+    renderPaginationProduk();
 }
 
 function initPopupProduk(data) {
@@ -81,6 +81,7 @@ function initPopupProduk(data) {
     const popupImg = document.getElementById('popup-img-produk');
     const popupNama = document.getElementById('popup-nama-produk');
     const popupDesc = document.getElementById('popup-desc-produk');
+    const popupHarga = document.getElementById('popup-harga-produk');
 
     buttons.forEach(btn => {
         btn.addEventListener('click', function(e) {
@@ -92,6 +93,7 @@ function initPopupProduk(data) {
             popupImg.src = item.image;
             popupNama.innerText = item.nama;
             popupDesc.innerHTML = item.deskirpsi;
+            popupHarga.innerHTML = item.harga;
 
             popup.style.display = "flex";
         });

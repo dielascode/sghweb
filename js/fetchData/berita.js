@@ -9,8 +9,8 @@ function loadBerita() {
             beritaData = data;
             currentPageBerita = 1;
             renderBerita();
-            renderPagination();
-            initPopup(data);
+            renderPaginationBarita();
+            initPopupBerita(data);
         })
         .catch(err => console.error("Error loading berita:", err));
 }
@@ -50,8 +50,8 @@ function renderBerita() {
     });
 }
 
-function renderPagination() {
-    const pag = document.getElementById("pagination");
+function renderPaginationBarita() {
+    const pag = document.getElementById("paginationBerita");
     if (!pag) return;
 
     pag.innerHTML = "";
@@ -59,27 +59,27 @@ function renderPagination() {
     const totalPages = Math.ceil(beritaData.length / itemsPerPageBerita);
 
     pag.innerHTML += `
-        <button class="page-btn" ${currentPageBerita === 1 ? "disabled" : ""} onclick="goToPage(${currentPageBerita - 1})">Prev</button>
+        <button class="page-btn" ${currentPageBerita === 1 ? "disabled" : ""} onclick="goToPageBerita(${currentPageBerita - 1})">Prev</button>
     `;
 
     for (let i = 1; i <= totalPages; i++) {
         pag.innerHTML += `
-            <button class="page-number ${currentPageBerita === i ? "active" : ""}" onclick="goToPage(${i})">${i}</button>
+            <button class="page-number ${currentPageBerita === i ? "active" : ""}" onclick="goToPageBerita(${i})">${i}</button>
         `;
     }
 
     pag.innerHTML += `
-        <button class="page-btn" ${currentPageBerita === totalPages ? "disabled" : ""} onclick="goToPage(${currentPageBerita + 1})">Next</button>
+        <button class="page-btn" ${currentPageBerita === totalPages ? "disabled" : ""} onclick="goToPageBerita(${currentPageBerita + 1})">Next</button>
     `;
 }
 
-function goToPage(page) {
+function goToPageBerita(page) {
     currentPageBerita = page;
     renderBerita();
-    renderPagination();
+    renderPaginationBarita();
 }
 
-function initPopup(data) {
+function initPopupBerita(data) {
     const buttons = document.querySelectorAll('.news-button');
 
     const popup = document.getElementById('popup-detail-berita');
@@ -103,7 +103,7 @@ function initPopup(data) {
     });
 }
 
-function tutupPopup() {
+function tutupPopupProduk() {
     document.getElementById('popup-detail-berita').style.display = "none";
 }
 

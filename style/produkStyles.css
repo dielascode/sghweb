@@ -1,11 +1,11 @@
 .banner-produk {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
-    padding: 140px 0;
-    height: 200px;
+    padding: 100px 0;
+    height: 270px;
     margin: 80px 20px 0 20px;
     border-radius: 20px;
 }
@@ -94,6 +94,12 @@
 
 .produk-child img {
     width: auto;
+}
+.paginationProduk {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 /* OVERLAY */
@@ -228,9 +234,9 @@
 
 
 @media (max-width: 992px) {
-    .banner-tentang {
-        padding: 160px 0;
-        height: 150px;
+    .banner-produk {
+        padding: 65px 0;
+        height: 175px;
     }
 
     .produk-container {

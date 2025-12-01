@@ -1,11 +1,11 @@
 .banner-daftar {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
-    padding: 140px 0;
-    height: 200px;
+    padding: 100px 0;
+    height: 270px;
     margin: 80px 20px 0 20px;
     border-radius: 20px;
 }
@@ -20,7 +20,7 @@
 /* DAFTAR MITRA SECTION */
 .daftar-container {
     background-color: #ffffff;
-    padding: 67px 150px;
+    padding: 40px 80px;
 }
 
 .daftar-container .desc-daftar-mitra {
@@ -62,15 +62,15 @@
     display: flex;
     align-items: center;
     max-width: 1300px;
-    width: 150%;
+    width: 95%;
     height: 100%;
     position: relative;
 }
 
     /* LOGO */
 .ewindo-container .logo-circle {
-    width: 370px;
-    height: 370px;
+    width: 330px;
+    height: 330px;
     border-radius: 50%;
     background: white;
     display: flex;
@@ -81,8 +81,8 @@
 }
 
 .ewindo-container .logo-circle img {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     object-fit: contain;
     border-radius: 50%;
     box-shadow: 0 25px 30px rgba(0,0,0,0.10);
@@ -91,8 +91,7 @@
 .ewindo-container .ewindo-right {
     position: relative;
     flex: 1;
-    height: 295px;
-    width: -46px;
+    height: 260px;
     border-radius: 60px;
     overflow: hidden;
     margin-left: -120px;      
@@ -125,7 +124,7 @@
 .ewindo-container .ewindo-content {
     position: relative;
     z-index: 3;
-    padding: 85px 65px;
+    padding: 58px 60px;
     padding-left: 200px; 
 }
 
@@ -139,7 +138,7 @@
 }
 
 .ewindo-container .ewindo-content h2 span {
-    color: #9cd737;
+    color: #aeea47;
 }
 
 .ewindo-container .ewindo-content p {
@@ -158,7 +157,7 @@
         padding: 0px 0;
         text-align: center;
         font-weight: 700;
-        font-size: 2.0rem;
+        font-size: 1.5rem;
         width:  100%;
         justify-content: center;
     }
@@ -167,9 +166,9 @@
         padding: 0px 0;
         text-align: center;
         font-weight: 700;
-        font-size: 3.0rem;
+        font-size: 2.0rem;
         width: 100%;
-        color: #5aca04;
+        color: #87c51d;
 
     }
     .mitra-container .mitra-item p {
@@ -245,13 +244,14 @@
 
     /* GARIS */
     .join-mitra-container .garis-title {
-        border: none;
-        border-top: 4px solid #000000;
+        border-top: 4px solid #030101;
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
         margin-bottom: 30px;
-       width: 70%;
+        width: 70%;
+        opacity: 100;
+       
     }
 
     /* PARAGRAF */
@@ -259,31 +259,18 @@
         font-size: 1rem;
         line-height: 1.6;
         color: #000000;
-        padding: 30px 150px;
+        padding: 17px 96px;
         margin: 0 auto 30px auto;
         margin-top: 30px;
     }
+
     /*button*/
-    .join-mitra-container .button-mitra {
+    .join-mitra-container .button-mitra a {
         text-align: center;
         margin: 30px 0;
-    }
-
-    .cta-button .btn-main-hijau {
-        padding: 10px 28px;
-        border-radius: 999px;
-        background: #5aca04;
-        color: #ffffff;
         text-decoration: none;
-        font-size: 0.9rem;
-        font-weight: 700;
-        border: none;
-        cursor: pointer;
-        white-space: nowrap;
-        display: inline-block;
-        box-shadow: 0 10px 20px rgba(85, 121, 71, 0.45);
-        transition: all 0.2s ease-in-out;
     }
+    
 
     .cta-button .btn-main-hijau:hover {
         background: #4a6a3e;
@@ -306,7 +293,7 @@
         .mitra-container,
         .benefit-container,
         .join-mitra-container {
-            padding: 30px 30px;
+            padding: 30px 10px;
     }
 
     .container-daftar {
@@ -319,7 +306,7 @@
 
     .mitra-container .mitra-item p, 
     .join-mitra-container .desc-join-mitra p {
-        padding: 50px 50px;
+        padding: 10px 10px;
     }
 
     .daftar-container .desc-daftar-mitra {
@@ -343,7 +330,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 10px;
+    padding: 10px 10px;
     min-height: 600px; 
     }
 
@@ -364,8 +351,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10; 
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    z-index: 5; 
     }
 
     .ewindo-container .logo-circle img {
@@ -373,10 +359,12 @@
     height: 75%;
     object-fit: contain;
     border-radius: 50%; 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
     }
    
     .ewindo-container .ewindo-right {
     flex: 1;
+    transform: translateX(65px);
     height: 400px;
     width: 100%;
     border-radius: 40px;
@@ -384,7 +372,6 @@
     position: relative;
     margin-top: -125px;
     padding-top: 125px; 
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
     }
 
    .ewindo-container .ewindo-bg {
@@ -402,7 +389,7 @@
     .ewindo-container .bg-gradient {
     position: absolute;
     inset: 0;
-    background-color: rgba(30, 70, 30, 0.85);
+    background-color: rgba(0, 50, 0, 0.50);
     z-index: 2; 
     }
 
@@ -434,7 +421,7 @@
     .benefit-container {
         flex-wrap: wrap; 
         justify-content: space-around;
-        padding: 40px 10px;
+        padding: 10x 10px;
     }
     
     .benefit-container .benefit-item {
@@ -448,11 +435,10 @@
 
 }
 
-    @media (max-width: 992px) {
+    @media (max-width: 480px) {
     .banner-daftar {
-        padding: 80px 0; 
-        margin: 60px 10px 0 10px;
-        height: auto;
+        padding: 65px 0;
+        height: 175px;
     }
 
     .container-daftar,
@@ -484,6 +470,7 @@
     .ewindo-container .logo-circle img {
         width: 70%;
         height: 70%;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
     }
 
     .ewindo-container .ewindo-right {
@@ -491,6 +478,7 @@
         border-radius: 20px; 
         margin-top: -90px; 
         padding-top: 90px; 
+        transform: translateX(60px);
     }
 
     .ewindo-container .ewindo-content {
@@ -523,45 +511,5 @@
     
     .join-mitra-container .garis-title {
         width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    .ewindo-container {
-        padding: 20px 5px;
-        min-height: 450px;
-    }
-
-    .ewindo-container .ewindo-card {
-        width: 100%; 
-    }
-
-    .ewindo-container .logo-circle {
-        width: 140px;
-        height: 140px;
-    }
-
-    .ewindo-container .logo-circle img {
-        width: 65%;
-        height: 65%;
-    }
-
-    .ewindo-container .ewindo-right {
-        height: 250px;
-        border-radius: 15px;
-        margin-top: -70px;
-        padding-top: 70px;
-    }
-
-    .ewindo-container .ewindo-content {
-        padding: 15px 20px;
-    }
-
-    .ewindo-container .ewindo-content h2 {
-        font-size: 20px;
-    }
-
-    .ewindo-container .ewindo-content p {
-        font-size: 14px;
     }
 }
