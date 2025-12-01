@@ -3,7 +3,20 @@ fetch("./components/top_bottom/navbar.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("navbar").innerHTML = data;
+
+        // Setelah navbar ter-load → tambahkan event untuk menutup menu
+        const navLinks = document.querySelectorAll("#navbar a");
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                if (navbarCollapse.classList.contains("show")) {
+                    navbarCollapse.classList.remove("show");
+                }
+            });
+        });
     });
+
 
 // Load Footer
 fetch("/components/top_bottom/footer.html")
