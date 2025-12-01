@@ -61,6 +61,7 @@
 .ewindo-container .ewindo-card {
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width: 1300px;
     width: 150%;
     height: 100%;
@@ -90,6 +91,7 @@
 
 .ewindo-container .ewindo-right {
     position: relative;
+    transform: translateX(60px);
     flex: 1;
     height: 295px;
     width: -46px;
@@ -97,6 +99,8 @@
     overflow: hidden;
     margin-left: -120px;      
     z-index: 3;
+
+
 }
 
     /* BG FOTO */
@@ -479,24 +483,23 @@
 
     .ewindo-container .ewindo-card {
         width: 55%; 
-        min-width: 300px;
-        position: relative;
     }
 
     .ewindo-container .logo-circle {
         width: 180px; 
         height: 180px;
-        position: absolute;
-        
+
     }
 
     .ewindo-container .logo-circle img {
         width: 70%;
         height: 70%;
+        
     }
 
     .ewindo-container .ewindo-right {
         height: 300px; 
+    align-items: center;
         border-radius: 20px; 
         margin-top: -90px; 
         padding-top: 90px; 
