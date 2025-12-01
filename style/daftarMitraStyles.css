@@ -468,17 +468,26 @@
     }
 
     .ewindo-container {
-        padding: 30px 10px;
-        min-height: 500px;
+    padding: 30px 10px;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
     }
 
     .ewindo-container .ewindo-card {
-        width: 95%; 
+        width: 55%; 
+        min-width: 300px;
+        position: relative;
     }
 
     .ewindo-container .logo-circle {
         width: 180px; 
         height: 180px;
+        position: absolute;
+        
     }
 
     .ewindo-container .logo-circle img {
