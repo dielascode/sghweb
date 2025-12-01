@@ -542,7 +542,8 @@
     }
 
     .ewindo-container .ewindo-card {
-        width: 100%; 
+        width: 500px; 
+        height: 500px;
     }
 
     .ewindo-container .logo-circle {

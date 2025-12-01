@@ -1,6 +1,6 @@
-.banner-studibanding{
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+.banner-studibanding {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
@@ -9,11 +9,326 @@
     margin: 80px 20px 0 20px;
     border-radius: 20px;
 }
-.container-studibanding{
+
+.container-studibanding {
     padding: 10px 150px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: center;
     color: white;
+}
+
+.studibanding1-container {
+    padding: 50px 150px;
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+.studibanding1-left {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.studibanding1-left h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.studibanding1-left h1 span {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #87c51d;
+}
+
+.studibanding1-right {
+    width: 50%;
+}
+
+.studibanding1-right img {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.studibanding2-container {
+    padding: 50px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.studibanding2-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studibanding2-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.studibanding3-container {
+    padding: 50px 150px;
+    width: 100%;
+}
+
+.studibanding3-langkah {
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 80;
+    align-items: center;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 36px;
+    color: #87c51d;
+    font-weight: 700;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    width: 85%;
+
+}
+
+.circle {
+
+    width: 85px;
+    height: 45px;
+    border-radius: 50%;
+    background: #303C1B;
+    margin-right: 20px;
+    position: relative;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 65px;
+    background: black;
+}
+
+.step:last-child .circle::after {
+    display: none;
+}
+
+.step p {
+    width: auto;
+    line-height: 1.6;
+    color: black;
+}
+
+.studibanding4-container {
+    padding: 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.studibanding4-left h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.studibanding4-left h1 span {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #87c51d;
+}
+
+.studibanding4-right {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.btn-studibanding-hijau {
+    padding: 10px 30px;
+
+    width: 230px;
+    background-color: #303C1B;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .studibanding1-left {
+        width: 100%;
+
+    }
+
+    .studibanding1-left h1 {
+        font-size: 2.2rem;
+    }
+
+    .studibanding1-left h1 span {
+        font-size: 2.2rem;
+    }
+
+    .studibanding1-container,
+    .studibanding2-container,
+    .studibanding3-container,
+    .studibanding4-container {
+        padding: 30px 30px;
+    }
+
+    .studibanding1-container {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .studibanding2-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .studibanding3-langkah {
+        padding: 0px;
+    }
+
+    .circle::after {
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .studibanding1-container,
+    .studibanding2-container,
+    .studibanding3-container,
+    .studibanding4-container {
+        padding: 30px 60px;
+    }
+
+    .studibanding1-left h1 {
+        font-size: 2.0rem;
+    }
+
+    .studibanding1-left h1 span {
+        font-size: 2.0rem;
+    }
+
+    .studibanding2-container {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .studibanding1-left,
+    .studibanding1-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .circle {
+
+        width: 130px;
+        height: 45px;
+
+    }
+
+    .circle::after {
+        height: 137px;
+    }
+
+    .studibanding4-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .studibanding4-right,
+    .studibanding4-left {
+        width: 100%;
+        text-align: center;
+    }
+     .studibanding4-left h1 {
+        font-size: 2.0rem;
+    }
+
+    .studibanding4-left h1 span {
+        font-size: 2.0rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-studibanding {
+        padding: 110px 0;
+    }
+
+    .container-studibanding {
+        padding: 10px 90px;
+    }
+
+    .studibanding1-left h1 {
+        font-size: 1.6rem;
+    }
+
+    .studibanding1-left h1 span {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .circle {
+        width: 190px;
+        height: 33px;
+    }
+
+    .circle::after {
+        height: 183px;
+    }
+
+    .studibanding4-left h1 {
+        font-size: 1.6rem;
+    }
+
+    .studibanding4-left h1 span {
+        font-size: 1.6rem;
+    }
+
 }
