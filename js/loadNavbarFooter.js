@@ -1,10 +1,8 @@
-// Load Navbar
 fetch("./components/top_bottom/navbar.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("navbar").innerHTML = data;
 
-        // Setelah navbar ter-load → tambahkan event untuk menutup menu
         const navLinks = document.querySelectorAll("#navbar a");
         const navbarCollapse = document.querySelector(".navbar-collapse");
 
@@ -18,7 +16,6 @@ fetch("./components/top_bottom/navbar.html")
     });
 
 
-// Load Footer
 fetch("/components/top_bottom/footer.html")
     .then(res => res.text())
     .then(data => {

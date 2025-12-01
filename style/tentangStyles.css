@@ -245,4 +245,8 @@ font-weight: 700;
     .profil-container .profil-container-left, .profil-container .profil-container-right {
         width: 100%;
     }
+    .struktur-item img {
+    width: 80%;
+    border-radius: 20px;
+}
 }
