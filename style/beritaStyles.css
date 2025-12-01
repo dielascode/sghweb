@@ -101,9 +101,15 @@
   white-space: nowrap;
 }
 
+.news-card:hover {
+  background: #fffffF;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(22, 163, 74, 0.4);
+}
+
 .news-button:hover {
   background: #556B2F;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(22, 163, 74, 0.4);
 }
 
@@ -131,7 +137,6 @@
     border-radius: 8px;
     object-fit: cover;
 }
-
 
 .popup-box {
     width: 40%;
