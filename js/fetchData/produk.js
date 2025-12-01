@@ -81,6 +81,7 @@ function initPopupProduk(data) {
     const popupImg = document.getElementById('popup-img-produk');
     const popupNama = document.getElementById('popup-nama-produk');
     const popupDesc = document.getElementById('popup-desc-produk');
+    const popupHarga = document.getElementById('popup-harga-produk');
 
     buttons.forEach(btn => {
         btn.addEventListener('click', function(e) {
@@ -92,6 +93,7 @@ function initPopupProduk(data) {
             popupImg.src = item.image;
             popupNama.innerText = item.nama;
             popupDesc.innerHTML = item.deskirpsi;
+            popupHarga.innerHTML = item.harga;
 
             popup.style.display = "flex";
         });
