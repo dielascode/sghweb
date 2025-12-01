@@ -95,6 +95,12 @@
 .produk-child img {
     width: auto;
 }
+.paginationProduk {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
 
 /* OVERLAY */
 .popup-overlay {

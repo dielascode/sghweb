@@ -1,17 +1,18 @@
 let galeriData = [];
-let currentPage = 1;
-const itemsPerPage = 9;
+let currentPageGaleri = 1;
+const itemsPerPageGaleri = 9;
 
 function loadGaleri() {
     fetch('/data/galeri.json')
         .then(res => res.json())
         .then(data => {
             galeriData = data;
-            currentPage = 1; 
+            currentPageGaleri = 1;
             renderGaleri();
-            renderPagination();
+            renderPaginationGaleri();
+            console.log(data)
         })
-        .catch(err => console.error("Error loading galeri:", err));
+        .catch(err => console.error("Error loading GALERI:", err));
 }
 
 function renderGaleri() {
@@ -20,46 +21,52 @@ function renderGaleri() {
 
     container.innerHTML = "";
 
-    const start = (currentPage - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
+    const start = (currentPageGaleri - 1) * itemsPerPageGaleri;
+    const end = start + itemsPerPageGaleri;
 
     const pageItems = galeriData.slice(start, end);
 
     pageItems.forEach(item => {
         container.innerHTML += `
-            <div class="gallery-item">
-                <img src="${item.image}" alt="images">
-                <p class="caption">${item.caption}</p>
-            </div>
+        <div class="gallery-item">
+            <img src="${item.image}" alt="Memetik Melon">
+            <p class="caption">${item.caption}</p>
+        </div>
         `;
     });
 }
 
-function renderPagination() {
-    const pag = document.getElementById("pagination");
+function renderPaginationGaleri() {
+    const pag = document.getElementById("paginationGaleri");
     if (!pag) return;
 
     pag.innerHTML = "";
 
-    const totalPages = Math.ceil(galeriData.length / itemsPerPage);
+    const totalPages = Math.ceil(galeriData.length / itemsPerPageGaleri);
 
     pag.innerHTML += `
-        <button class="page-btn" ${currentPage === 1 ? "disabled" : ""} onclick="goToPage(${currentPage - 1})">Prev</button>
+        <button class="page-btn" ${currentPageGaleri === 1 ? "disabled" : ""} onclick="goToPageGaleri(${currentPageGaleri - 1})">Prev</button>
     `;
 
     for (let i = 1; i <= totalPages; i++) {
         pag.innerHTML += `
-            <button class="page-number ${currentPage === i ? "active" : ""}" onclick="goToPage(${i})">${i}</button>
+            <button class="page-number ${currentPageGaleri === i ? "active" : ""}" onclick="goToPageGaleri(${i})">${i}</button>
         `;
     }
 
     pag.innerHTML += `
-        <button class="page-btn" ${currentPage === totalPages ? "disabled" : ""} onclick="goToPage(${currentPage + 1})">Next</button>
+        <button class="page-btn" ${currentPageGaleri === totalPages ? "disabled" : ""} onclick="goToPageGaleri(${currentPageGaleri + 1})">Next</button>
     `;
 }
 
-function goToPage(page) {
-    currentPage = page;
+function goToPageGaleri(page) {
+    currentPageGaleri = page;
     renderGaleri();
-    renderPagination();
+    renderPaginationGaleri();
 }
+
+
+
+
+
+
