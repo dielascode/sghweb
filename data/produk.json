@@ -46,5 +46,21 @@
         "deskirpsi": "Deskripsi produk A",
         "harga": 20000,
         "stok": 30
+    },
+    {
+        "id": 7,
+        "nama": "Produk B",
+        "image": "/images/produk/Frame 2903.png",
+        "deskirpsi": "Deskripsi produk A",
+        "harga": 20000,
+        "stok": 30
+    },
+    {
+        "id": 6,
+        "nama": "Produk B",
+        "image": "/images/produk/Frame 2903.png",
+        "deskirpsi": "Deskripsi produk A",
+        "harga": 20000,
+        "stok": 30
     }
 ]
