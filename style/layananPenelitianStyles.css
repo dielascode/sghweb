@@ -47,6 +47,12 @@
 
     color: #87c51d;
 }
+.penelitian1-right {
+    width: 50%;
+    
+    
+    
+}
 
 .penelitian1-right img {
     height: 100%;
@@ -87,14 +93,14 @@
 .step {
     display: flex;
     align-items: flex-start;
-    width: 85%;
+    width: 90%;
 
 }
 
 .circle-penelitian {
 
     width: 85px;
-    height: 45px;
+    height: 35px;
     border-radius: 50%;
     background: #303C1B;
     margin-right: 20px;
@@ -108,7 +114,7 @@
     top: 100%;
     transform: translateX(-50%);
     width: 1px;
-    height: 65px;
+    height: 80px;
     background: black;
 }
 

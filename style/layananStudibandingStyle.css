@@ -37,16 +37,19 @@
 
 .studibanding1-left h1 {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: black;
 }
 
 .studibanding1-left h1 span {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #87c51d;
 }
-
+.studibanding1-right {
+     width: 50%;
+    
+}
 
 
 .studibanding1-right img {
@@ -110,14 +113,14 @@
 .step {
     display: flex;
     align-items: flex-start;
-    width: 85%;
+    width: 90%;
 
 }
 
 .circle-studibanding {
 
     width: 85px;
-    height: 45px;
+    height: 35px;
     border-radius: 50%;
     background: #303C1B;
     margin-right: 20px;
@@ -131,7 +134,7 @@
     top: 100%;
     transform: translateX(-50%);
     width: 1px;
-    height: 65px;
+    height: 80px;
     background: black;
 }
 

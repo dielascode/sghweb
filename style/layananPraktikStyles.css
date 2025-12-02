@@ -42,6 +42,13 @@
     
     color: #87c51d;
 }
+.praktik1-right {
+    width: 50%;
+    
+    
+    
+}
+
 .praktik1-right img{
     display: flex;
     height: 100%;
@@ -77,13 +84,13 @@
 .step{
     display: flex;
     align-items: flex-start;
-    width: 85%;
+    width: 90%;
     
 }
 .circle-praktik{
     
     width: 85px;
-    height: 45px;
+    height: 35px;
     border-radius: 50%;
     background: #303C1B;
     margin-right: 20px;
@@ -96,7 +103,7 @@
     top: 100%;
     transform: translateX(-50%);
     width: 1px;
-    height: 65px; 
+    height: 80px; 
     background: black;
 }
 .step:last-child .circle-praktik::after {
