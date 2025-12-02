@@ -171,7 +171,10 @@
 
 @media (max-width: 992px) {
 
-    
+    .banner-magang{
+        padding: 65px 0;
+        height: 175px;
+    }
 
     .magang1-left {
         width: 100%;
