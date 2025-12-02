@@ -300,7 +300,8 @@
 
 @media (max-width: 480px) {
     .banner-penelitian {
-        padding: 110px 0;
+     padding: 65px 0;
+    height: 175px;
     }
 
     .container-penelitian {
@@ -325,12 +326,12 @@
     }
 
     .circle-penelitian {
-        width: 190px;
+        width: 175px;
         height: 28px;
     }
 
     .circle-penelitian::after {
-        height: 230px;
+        height: 215px;
     }
 
     .penelitian3-left h1 {

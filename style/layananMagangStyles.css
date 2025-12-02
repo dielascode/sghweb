@@ -280,7 +280,7 @@
     
 
     .container-magang {
-        padding: 10px 90px;
+        padding: 10px 15px;
     }
 
     .magang1-left h1 {
@@ -301,12 +301,12 @@
     }
 
     .circle-magang {
-        width: 190px;
+        width: 175px;
         height: 28px;
     }
 
     .circle-magang::after {
-        height: 230px;
+        height: 215px;
     }
 
 

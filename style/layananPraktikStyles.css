@@ -250,7 +250,8 @@
 
 @media (max-width: 480px) {
     .banner-praktik {
-    padding: 110px 0;
+     padding: 65px 0;
+    height: 175px;
     }
 
     .container-praktik {
@@ -274,12 +275,12 @@
     }
 
     .circle-praktik {
-        width: 190px;
+        width: 175px;
         height: 28px;
     }
 
     .circle-praktik::after {
-        height: 230px;
+        height: 215px;
     }
 
     .praktik3-left h1 {
