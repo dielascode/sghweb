@@ -8,6 +8,7 @@
     height: 270px;
     margin: 80px 20px 0 20px;
     border-radius: 20px;
+    text-align: center;
 }
 
 .container-produk {
@@ -47,6 +48,7 @@
 }
 .produk-container .desc-produk .desc-produk-right img {
     width: 100%;
+    border-radius: 20px;
 }
 
 .produk-container .desc-produk .desc-produk-left h2{

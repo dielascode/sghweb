@@ -4,10 +4,11 @@
         url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
-    padding: 160px 0;
-    height: 200px;
+    padding: 100px 0;
+    height: 270px;
     margin: 80px 20px 0 20px;
     border-radius: 20px;
+    text-align: center;
 }
 
 .container-studibanding {
@@ -73,7 +74,7 @@
 
 .studibanding2-item img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .studibanding3-container {
