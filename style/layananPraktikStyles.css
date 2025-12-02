@@ -4,10 +4,11 @@
         url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
-    padding: 160px 0;
-    height: 200px;
+    padding: 100px 0;
+    height: 270px;
     margin: 80px 20px 0 20px;
     border-radius: 20px;
+    text-align: center;
 }
 .container-praktik{
     padding: 10px 150px;
@@ -42,8 +43,9 @@
     color: #87c51d;
 }
 .praktik1-right img{
+    display: flex;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 .praktik2-container{
@@ -233,7 +235,7 @@
     }
 
     .container-praktik {
-        padding: 10px 90px;
+        padding: 10px 15px;
     }
 
     .praktik1-left h1 {
