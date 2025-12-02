@@ -3,17 +3,31 @@ fetch("./components/top_bottom/navbar.html")
     .then(data => {
         document.getElementById("navbar").innerHTML = data;
 
-        const navLinks = document.querySelectorAll("#navbar a");
         const navbarCollapse = document.querySelector(".navbar-collapse");
 
-        navLinks.forEach(link => {
+        const normalLinks = document.querySelectorAll(
+            "#navbar a:not(.dropdown-toggle):not(.dropdown-item)"
+        );
+
+        normalLinks.forEach(link => {
             link.addEventListener("click", () => {
                 if (navbarCollapse.classList.contains("show")) {
                     navbarCollapse.classList.remove("show");
                 }
             });
         });
+
+        const dropdownItems = document.querySelectorAll("#navbar .dropdown-item");
+
+        dropdownItems.forEach(item => {
+            item.addEventListener("click", () => {
+                if (navbarCollapse.classList.contains("show")) {
+                    navbarCollapse.classList.remove("show");
+                }
+            });
+        });
     });
+
 
 
 fetch("/components/top_bottom/footer.html")
