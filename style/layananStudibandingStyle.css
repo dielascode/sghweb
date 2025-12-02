@@ -1,13 +1,14 @@
 .banner-studibanding {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
-    padding: 160px 0;
-    height: 200px;
+    padding: 100px 0;
+    height: 270px;
     margin: 80px 20px 0 20px;
     border-radius: 20px;
+    text-align: center;
 }
 
 .container-studibanding {
@@ -46,13 +47,11 @@
     color: #87c51d;
 }
 
-.studibanding1-right {
-    width: 50%;
-}
+
 
 .studibanding1-right img {
-    display: flex;
-    width: 100%;
+    
+    height: 100%;
     border-radius: 10px;
 
 }
@@ -75,7 +74,7 @@
 
 .studibanding2-item img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .studibanding3-container {
@@ -93,7 +92,7 @@
 
 }
 
-.title {
+.title-studibanding {
     text-align: center;
     font-size: 28px;
     font-weight: 600;
@@ -101,7 +100,7 @@
 
 }
 
-.subtitle {
+.subtitle-studibanding {
     text-align: center;
     font-size: 36px;
     color: #87c51d;
@@ -115,7 +114,7 @@
 
 }
 
-.circle {
+.circle-studibanding {
 
     width: 85px;
     height: 45px;
@@ -125,7 +124,7 @@
     position: relative;
 }
 
-.circle::after {
+.circle-studibanding::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -136,7 +135,7 @@
     background: black;
 }
 
-.step:last-child .circle::after {
+.step:last-child .circle-studibanding::after {
     display: none;
 }
 
@@ -226,8 +225,11 @@
     .studibanding3-langkah {
         padding: 0px;
     }
-
-    .circle::after {
+    .circle-studibanding {
+     width: 100px;
+     height: 37px;
+    }
+    .circle-studibanding::after {
         height: 100px;
     }
 }
@@ -238,7 +240,7 @@
     .studibanding2-container,
     .studibanding3-container,
     .studibanding4-container {
-        padding: 30px 60px;
+        padding: 30px 30px;
     }
 
     .studibanding1-left h1 {
@@ -263,15 +265,15 @@
         text-align: center;
     }
 
-    .circle {
+    .circle-studibanding {
 
         width: 130px;
         height: 45px;
 
     }
 
-    .circle::after {
-        height: 137px;
+    .circle-studibanding::after {
+        height: 110px;
     }
 
     .studibanding4-container {
@@ -299,28 +301,32 @@
     }
 
     .container-studibanding {
-        padding: 10px 90px;
+        padding: 10px 15px;
     }
 
     .studibanding1-left h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .studibanding1-left h1 span {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+    }
+    .title-studibanding {
+        font-size: 22px;
+
     }
 
-    .subtitle {
-        font-size: 30px;
+    .subtitle-studibanding {
+        font-size: 26px;
     }
 
-    .circle {
+    .circle-studibanding {
         width: 190px;
-        height: 33px;
+        height: 28px;
     }
 
-    .circle::after {
-        height: 183px;
+    .circle-studibanding::after {
+        height: 230px;
     }
 
     .studibanding4-left h1 {

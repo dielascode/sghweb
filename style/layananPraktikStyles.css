@@ -1,13 +1,14 @@
 .banner-praktik{
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
-    padding: 160px 0;
-    height: 200px;
+    padding: 100px 0;
+    height: 270px;
     margin: 80px 20px 0 20px;
     border-radius: 20px;
+    text-align: center;
 }
 .container-praktik{
     padding: 10px 150px;
@@ -42,8 +43,9 @@
     color: #87c51d;
 }
 .praktik1-right img{
+    display: flex;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 .praktik2-container{
@@ -59,14 +61,14 @@
     align-items: center;
 }
 
-.title{
+.title-praktik{
     text-align: center;
     font-size: 28px;
     font-weight: 600;
     color: black;
 
 }
-.subtitle{
+.subtitle-praktik{
     text-align: center;
     font-size: 36px;
     color: #87c51d;
@@ -78,7 +80,7 @@
     width: 85%;
     
 }
-.circle{
+.circle-praktik{
     
     width: 85px;
     height: 45px;
@@ -87,7 +89,7 @@
     margin-right: 20px;
     position: relative;
 }
-.circle::after {
+.circle-praktik::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -97,7 +99,7 @@
     height: 65px; 
     background: black;
 }
-.step:last-child .circle::after {
+.step:last-child .circle-praktik::after {
     display: none;
 }
 .step p{
@@ -170,8 +172,14 @@
     .praktik2-langkah {
         padding: 0px;
     }
+    .circle-praktik {
 
-    .circle::after {
+        width: 100px;
+        height: 37px;
+
+    }
+
+    .circle-praktik::after {
         height: 100px;
     }
 }
@@ -180,7 +188,7 @@
     .praktik1-container,
     .praktik2-container,
     .praktik3-container {
-       padding: 30px 60px; 
+       padding: 30px 30px; 
     }
     .praktik1-left h1 {
         font-size: 2.0rem;
@@ -197,15 +205,15 @@
         text-align: center;
     }
 
-    .circle {
+    .circle-praktik {
 
         width: 130px;
         height: 45px;
 
     }
 
-    .circle::after {
-        height: 137px;
+    .circle-praktik::after {
+        height: 110px;
     }
 
     .praktik3-container {
@@ -233,27 +241,32 @@
     }
 
     .container-praktik {
-        padding: 10px 90px;
+        padding: 10px 15px;
     }
 
     .praktik1-left h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .praktik1-left h1 span {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
-    .subtitle {
-        font-size: 32px;
+    .title-praktik {
+        font-size: 22px;
+
     }
 
-    .circle {
+    .subtitle-praktik {
+        font-size: 26px;
+    }
+
+    .circle-praktik {
         width: 190px;
-        height: 33px;
+        height: 28px;
     }
 
-    .circle::after {
-        height: 183px;
+    .circle-praktik::after {
+        height: 230px;
     }
 
     .praktik3-left h1 {

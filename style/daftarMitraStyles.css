@@ -1,13 +1,14 @@
 .banner-daftar {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('/images/bannerfiks.jpg');
     background-size: cover;
     background-position: center;
-    padding: 140px 0;
-    height: 200px;
+    padding: 100px 0;
+    height: 270px;
     margin: 80px 20px 0 20px;
     border-radius: 20px;
+    text-align: center;
 }
 .container-daftar{
     padding: 10px 150px;
@@ -438,9 +439,8 @@
 
     @media (max-width: 480px) {
     .banner-daftar {
-        padding: 80px 0; 
-        margin: 60px 10px 0 10px;
-        height: auto;
+        padding: 65px 0;
+        height: 175px;
     }
 
     .container-daftar,
