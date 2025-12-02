@@ -164,10 +164,8 @@
 }
 
 @media (max-width: 992px) {
-    .container-magang {
 
-        height: auto;
-    }
+    
 
     .magang1-left {
         width: 100%;
@@ -267,9 +265,10 @@
 
 @media (max-width: 480px) {
     .banner-magang {
-        padding: 110px 0;
-        margin: 60px 20px 0px;
+        padding: 65px 0;
+        height: 175px;
     }
+    
 
     .container-magang {
         padding: 10px 15px;
