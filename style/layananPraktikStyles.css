@@ -50,10 +50,10 @@
 }
 
 .praktik1-right img{
-    display: flex;
+    width: 100%;
     height: 100%;
     border-radius: 20px;
-    
+    object-fit: cover;
 }
 .praktik2-container{
      padding: 50px 150px;
@@ -64,8 +64,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px; 
-    margin-left: 80;
-    align-items: center;
+    margin-left: 0;
+    align-items: flex-start;
 }
 
 .title-praktik{
@@ -81,36 +81,60 @@
     color: #87c51d;
     font-weight: 700;
 }
-.step{
+.step-praktik{
     display: flex;
     align-items: flex-start;
-    width: 90%;
+    width: 100%; 
+    max-width: 900px;
     
 }
-.circle-praktik{
-    
-    width: 85px;
+.circle-praktik{ 
+    width: 35px;
     height: 35px;
     border-radius: 50%;
     background: #303C1B;
-    margin-right: 20px;
+    margin-right: 25px;
     position: relative;
+    flex-shrink: 0; 
 }
 .circle-praktik::after {
-    content: "";
+     content: "";
     position: absolute;
     left: 50%;
     top: 100%;
     transform: translateX(-50%);
-    width: 1px;
-    height: 80px; 
+    width: 2px;
+    height: 165px;
     background: black;
 }
-.step:last-child .circle-praktik::after {
+.step-praktik:last-child .circle-praktik::after {
     display: none;
 }
-.step p{
-    width: 80%;
+.step-praktik-conten {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.4s ease; 
+    cursor: pointer;
+    transform: translateY(0) scale(1);
+}
+.step-praktik-conten:hover {
+    transform: translateY(-8px) scale(1.03); 
+    box-shadow: 0 12px 20px rgba(0,0,0,0.25); 
+    background-color: #f9f9f9;
+}
+.step-praktik-conten h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: black;
+}
+.step-praktik p{
+    width: 100%;
     line-height: 1.6;
     color: black;
 }
@@ -183,17 +207,17 @@
     }
 
     .praktik2-langkah {
-        padding: 0px;
+        padding: 0px 20px;
     }
     .circle-praktik {
 
-        width: 100px;
-        height: 37px;
+         width: 35px;
+        height: 35px;
 
     }
 
     .circle-praktik::after {
-        height: 100px;
+        height: 170px;
     }
 }
 
@@ -220,13 +244,13 @@
 
     .circle-praktik {
 
-        width: 130px;
-        height: 45px;
+         width: 35px;
+        height: 35px;
 
     }
 
     .circle-praktik::after {
-        height: 110px;
+        height: 225px;
     }
 
     .praktik3-container {
@@ -265,6 +289,9 @@
     .praktik1-left h1 span {
         font-size: 1.4rem;
     }
+    .praktik2-container {
+        gap: 20px;
+    }
     .title-praktik {
         font-size: 22px;
 
@@ -275,12 +302,23 @@
     }
 
     .circle-praktik {
-        width: 175px;
-        height: 28px;
+         width: 25px;
+        height: 25px;
+    }
+     .step-praktik-conten {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
     }
 
     .circle-praktik::after {
-        height: 215px;
+       height: 260px;
+    }
+     .step-praktik-conten h3 {
+        font-size:14px;
+    }
+    .step-praktik-conten p {
+        font-size:10px;
     }
 
     .praktik3-left h1 {
