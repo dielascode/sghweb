@@ -12,9 +12,6 @@
 }
 .container-daftar{
     padding: 10px 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     text-align: center;
     color: white;
 }

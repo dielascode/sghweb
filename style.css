@@ -23,3 +23,27 @@ html {
     padding: 0;
     overflow-x: hidden;
 }
+/* .wa-floating {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;   
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.wa-floating img {
+    width: 35px;
+    height: 35px;
+}
+
+.wa-floating:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+} */
