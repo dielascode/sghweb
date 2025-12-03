@@ -56,7 +56,7 @@
     object-fit: cover;
 }
 .praktik2-container{
-     padding: 50px 150px;
+    padding: 50px 150px;
 
 }
 .praktik2-langkah{
@@ -173,6 +173,10 @@
     color: white;
     border: 0;
     border-radius: 30px;
+}
+.btn-praktik-hijau a {
+    color: white;
+    text-decoration: none;
 }
 
 @media (max-width: 992px) {

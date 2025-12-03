@@ -47,7 +47,7 @@
     color: #87c51d;
 }
 .studibanding1-right {
-     width: 50%;
+    width: 50%;
     
 }
 
@@ -214,6 +214,10 @@
     color: white;
     border: 0;
     border-radius: 30px;
+}
+.btn-studibanding-hijau a {
+    color: white;
+    text-decoration: none;
 }
 
 
