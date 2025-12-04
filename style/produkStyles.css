@@ -271,6 +271,7 @@
     }
 }
 @media (max-width: 768px) {
+
     .popup-content {
         flex-wrap: wrap;
     }
@@ -280,6 +281,7 @@
     }
 }
 @media (max-width: 480px) {
+    
     .grid-produk {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
 }
