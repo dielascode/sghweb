@@ -150,15 +150,18 @@
 }
 
 .struktur-item img {
-    width: 40%;
+    width: 100%;
     border-radius: 20px;
 }
-
+.struktur-item .judul-struktur-organisasi{
+    width: 100%;
+}
 .struktur-item{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    gap: 50px;
 }
 
 
@@ -186,7 +189,8 @@
     }
 
     .visi-container {
-        padding: 20px 50px;
+        padding: 20px 30px;
+        flex-direction: column;
     }
 
     .visi-item, .misi-item {
@@ -222,18 +226,11 @@
         grid-template-columns: 1fr;
     }
 
-    .visi-container {
-        padding: 10px 20px;
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .visi-container .visi-misi-left, .visi-container .visi-misi-right {
         width: 100%;
     }
 
-    .struktur-container {
-        padding: 10px 20px;
-    }
     .judul-struktur-organisasi{
     padding-right: 20px;
     padding-left:20px ;
