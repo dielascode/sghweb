@@ -87,6 +87,9 @@ button:disabled {
         padding: 65px 0;
         height: 175px;
     }
+    .container-galeri{
+    padding: 0px;
+}
 
     .gallery-container {
         padding: 40px 70px;

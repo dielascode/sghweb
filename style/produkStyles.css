@@ -104,6 +104,16 @@
     margin: 20px 0;
 }
 
+/* CLOSE BUTTON (X) */
+.popup-close-produk {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #6F8F41;
+    font-weight: bold;
+}
 /* OVERLAY */
 .popup-overlay {
     position: fixed;
@@ -121,7 +131,7 @@
 /* BOX POPUP - Sesuai style Figma */
 .popup-box-produk {
     background: #ffffff;
-    /* width: 85%; */
+    width: 85%;
     max-width: 900px;
     border-radius: 25px;
     padding: 25px 30px;
@@ -143,7 +153,7 @@
 }
 
 /* KONTEN GRID POPUP */
-.popup-content-produk-produk {
+.popup-content-produk {
     display: flex;
     gap: 25px;
     align-items: flex-start;
@@ -151,7 +161,7 @@
 
 /* GAMBAR PRODUK */
 #popup-img-produk {
-    width: 452px;
+    width: 300px;
     height: auto;
     border-radius: 18px;
     object-fit: cover;
@@ -206,6 +216,11 @@
     transition: 0.2s;
 }
 
+.btn-pesan:hover {
+    background: #567734;
+}
+
+
 .btn-pesan a {
     color: white;
     text-decoration: none;
@@ -213,6 +228,9 @@
 
 /* RESPONSIVE */
 @media screen and (max-width: 760px) {
+    .container-produk {
+    padding: 0;
+}
     .popup-box-produk {
         flex-direction: column;
         width: 90%;
