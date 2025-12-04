@@ -10,15 +10,16 @@
     border-radius: 20px;
     text-align: center;
 }
-
 .container-daftar {
-    padding: 10px 150px;
     text-align: center;
     color: white;
 }
 
 /* DAFTAR MITRA SECTION */
 .daftar-container {
+    text-align: center;
+    width: 100%;
+    padding: 65px 10px;
     background-color: #ffffff;
     padding: 50px 150px;
 }
@@ -133,8 +134,6 @@
     font-size: 31px;
     font-weight: 800;
     margin-bottom: 12px;
-
-
 }
 
 .ewindo-container .ewindo-content h2 span {
@@ -291,18 +290,12 @@
 
 /* ============ RESPONSIVE TABLET (max-width: 992px) ============ */
 @media (max-width: 992px) {
-
-    .container-daftar,
-    .daftar-container,
-    .ewindo-container,
-    .mitra-container,
-    .benefit-container,
-    .join-mitra-container {
-        padding: 30px 10px;
+    .container-daftar{
+        height: 175px;
     }
-
-    .container-daftar {
-        padding: 10px 50px;
+    .banner-daftar {
+        padding: 65px 0;
+        height: 175px;
     }
 
     .daftar-container {
@@ -447,6 +440,10 @@
 
 /* ============ RESPONSIVE TABLET (max-width: 768px) ============ */
 @media (max-width: 768px) {
+    .banner-daftar {
+        padding: auto;
+        height: 175px;
+    }
     .daftar-container .desc-daftar-mitra h1 {
         font-size: 1.5rem;
         text-align: center;
@@ -518,9 +515,8 @@
 /* ============ RESPONSIVE TABLET (max-width: 480px) ============ */
 @media (max-width: 480x) {
     .banner-daftar {
-        padding: 65px 0;
+        padding: auto;
         height: 175px;
-        text-align: center;
     }
 
     .container-daftar,
