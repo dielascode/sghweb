@@ -19,27 +19,7 @@
     text-align: center;
     color: white;
 }
-/* .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease-out;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-.zoom-in {
-    opacity: 0;
-    transform: scale(0.85);
-    transition: all 0.8s ease;
-}
-
-.zoom-in.active {
-    opacity: 1;
-    transform: scale(1);
-} */
-
+/* sectionnya profil container */
 .profil-container {
     padding: 50px 150px;
     margin-top: 30px;
@@ -82,17 +62,15 @@
     border-radius: 20px;
 }
 
-
-
+/* sectionnya visi misi */
 .visi-container {
-    background-image: url('/images/magang/background1.jpeg');
     padding: 30px 150px;
     display: flex;
     gap: 30px;
 }
 
 .visi-misi-left h2{
-font-weight: 700;
+    font-weight: 700;
     font-size: 2.5rem;
 }
 .visi-misi-left h2 span{
@@ -146,6 +124,7 @@ font-weight: 700;
     padding: 20px;
 }
 
+/* sectionnya strukturnya */
 .struktur-container {
     margin-top: 30px;
     padding: 30px 150px;
@@ -171,17 +150,18 @@ font-weight: 700;
 }
 
 .struktur-item img {
-    width: 40%;
+    width: 100%;
     border-radius: 20px;
 }
-
-
-
+.struktur-item .judul-struktur-organisasi{
+    width: 100%;
+}
 .struktur-item{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    gap: 50px;
 }
 
 
@@ -209,9 +189,8 @@ font-weight: 700;
     }
 
     .visi-container {
-        padding: 20px 50px;
-        /* flex-direction: column; */
-        /* align-items: center; */
+        padding: 20px 30px;
+        flex-direction: column;
     }
 
     .visi-item, .misi-item {
@@ -230,9 +209,9 @@ font-weight: 700;
 
 @media (max-width: 768px) {
     .banner-tentang {
-        padding: 65px 0;
+        padding: 65px 0;    
         height: 175px;
-    }
+    }}
 
     .container-tentang {
         padding: 10px 20px;
@@ -247,18 +226,14 @@ font-weight: 700;
         grid-template-columns: 1fr;
     }
 
-    .visi-container {
-        padding: 10px 20px;
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .visi-container .visi-misi-left, .visi-container .visi-misi-right {
         width: 100%;
     }
 
-    .struktur-container {
-        padding: 10px 20px;
-    }
+    .judul-struktur-organisasi{
+    padding-right: 20px;
+    padding-left:20px ;
 }
 @media (max-width: 480px) {
     .profil-container{
@@ -267,6 +242,10 @@ font-weight: 700;
     .profil-container .profil-container-left, .profil-container .profil-container-right {
         width: 100%;
     }
+    .judul-struktur-organisasi{
+    padding-right: 20px;
+    padding-left:20px ;
+}
     .struktur-item img {
     width: 80%;
     border-radius: 20px;

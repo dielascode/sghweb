@@ -229,7 +229,9 @@
     .banner-beranda {
         padding: 75px 0;
     }
-
+    #tentang-beranda .tentang-beranda-right{
+        text-align: center;
+    }
     .grid-layanan-beranda {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -323,7 +325,11 @@
 
     .banner-beranda {
         padding: 100px 0;
-
+    }
+    #tentang-beranda {
+        padding: 40px 30px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .right-beranda img {
