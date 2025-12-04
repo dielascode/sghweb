@@ -57,3 +57,8 @@ function sendToWA(e) {
 
     window.open(`https://wa.me/${nomor}?text=${text}`);
 }
+
+
+
+
+

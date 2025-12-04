@@ -1,3 +1,4 @@
+
 .banner-magang {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -56,11 +57,20 @@
     height: 100%;
     border-radius: 20px;
     object-fit: cover;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.magang1-right img:hover{
+    transform: scale(1.03);
+     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+  
 }
 
 
 .magang2-container {
     padding: 50px 150px;
+    background-image: linear-gradient(to bottom,  white,#F4FFF7,white);
 }
 
 .magang2-langkah {
@@ -184,17 +194,22 @@
 
 .btn-magang-hijau {
     padding: 10px 30px;
-
+    transition: .3s ease;
     width: 230px;
     background-color: #303C1B;
     color: white;
     border: 0;
     border-radius: 30px;
 }
+.btn-magang-hijau:hover {
+    transform: scale(1.05);
+    background-color: #435325;
+}
 .magang3-right a {
     color: white;
     text-decoration: none;
 }
+
 
 @media (max-width: 992px) {
 
@@ -362,3 +377,60 @@
     }
 
 }
+
+/* @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(25px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+    opacity: 0;
+    animation: fadeInUp .8s ease forwards;
+}
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+
+@keyframes fadeLoop {
+    0% { opacity: .3; }
+    50% { opacity: 1; }
+    100% { opacity: .3; }
+}
+
+.fade-loop {
+    animation: fadeLoop 2.2s infinite ease-in-out;
+}
+@keyframes slideLeft {
+    0% { opacity: 0; transform: translateX(-35px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+    0% { opacity: 0; transform: translateX(35px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.slide-left {
+    opacity: 0;
+    animation: slideLeft .8s ease forwards;
+}
+
+.slide-right {
+    opacity: 0;
+    animation: slideRight .8s ease forwards;
+}
+@keyframes zoomSoft {
+    0% { opacity: 0; transform: scale(0.92); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.zoom-soft {
+    opacity: 0;
+    animation: zoomSoft .7s ease forwards;
+} */
