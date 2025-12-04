@@ -52,6 +52,7 @@
 .btn-main-hijau a{
     text-decoration: none;
     color: white;
+    scroll-behavior: smooth;
 }
 
 .btn-main-hijau2 {
@@ -68,7 +69,7 @@
 }
 
 /* MAIN  TENTANG SECTION*/
-.tentang-beranda {
+#tentang-beranda {
     padding: 60px 150px;
     display: flex;
     justify-content: center;
@@ -76,21 +77,21 @@
     gap: 40px;
 }
 
-.tentang-beranda .tentang-beranda-left {
+#tentang-beranda .tentang-beranda-left {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
 
-.tentang-beranda .tentang-beranda-left .tentang-beranda-left-left {
+#tentang-beranda .tentang-beranda-left .tentang-beranda-left-left {
     flex-direction: column;
     display: flex;
     gap: 20px;
     align-items: flex-end;
 }
 
-.tentang-beranda .tentang-beranda-left .tentang-beranda-left-left .image-dua {
+#tentang-beranda .tentang-beranda-left .tentang-beranda-left-left .image-dua {
     width: 80%;
     border-radius: 20px;
     margin-bottom: 20px;

@@ -10,41 +10,34 @@
     border-radius: 20px;
     text-align: center;
 }
-.container-daftar{
-    padding: 10px 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.container-daftar {
     text-align: center;
     color: white;
 }
+
 /* DAFTAR MITRA SECTION */
 .daftar-container {
+    text-align: center;
+    width: 100%;
+    padding: 65px 10px;
     background-color: #ffffff;
-    padding: 40px 80px;
+    padding: 50px 150px;
 }
-
 .daftar-container .desc-daftar-mitra {
     display: flex;
-    gap: px;
+    gap: 5px;
     width: 100%;
 }
-
 .daftar-container .desc-daftar-mitra h1 {
     font-weight: 700;
     font-size: 2.5rem;
     width: 50%;
 }
-
 .daftar-container .desc-daftar-mitra p {
-    width: 50%;
+    width: 50%; 
 }
-
 .daftar-container .desc-daftar-mitra span {
     color: #87c51d;
-}
-
-.daftar-container .desc-daftar-mitra span {
     width: 100%;
     flex-direction: column;
     gap: 20px;
@@ -52,23 +45,20 @@
 }
 
 /* CARD SECTION */
-    /*WRAPPER */
 .ewindo-container {
     display: flex;
     justify-content: center;
-    padding: 25gitpx 10px;
+    padding: 25px 100px;
 }
-
 .ewindo-container .ewindo-card {
     display: flex;
     align-items: center;
     max-width: 1300px;
-    width: 95%;
     height: 100%;
     position: relative;
 }
 
-    /* LOGO */
+/* LOGO */
 .ewindo-container .logo-circle {
     width: 330px;
     height: 330px;
@@ -77,71 +67,62 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5;            
-    position: relative;
+    z-index: 5;
 }
-
 .ewindo-container .logo-circle img {
     width: 280px;
     height: 280px;
-    object-fit: contain;
     border-radius: 50%;
-    box-shadow: 0 25px 30px rgba(0,0,0,0.10);
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.10);
 }
-
 .ewindo-container .ewindo-right {
     position: relative;
     flex: 1;
     height: 260px;
     border-radius: 60px;
     overflow: hidden;
-    margin-left: -120px;      
+    margin-left: -120px;
     z-index: 3;
 }
 
-    /* BG FOTO */
+/* BG FOTO */
 .ewindo-container .ewindo-bg {
     position: absolute;
     inset: 0;
 }
-
 .ewindo-container .ewindo-bg img {
-    background: linear-gradient(to right, rgba(30, 70, 30, 0.85),rgba(30,70,30,0.85));
+    background: linear-gradient(to right, rgba(30, 70, 30, 0.85), rgba(30, 70, 30, 0.85));
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 .ewindo-container .bg-gradient {
-    position: absolute; 
-    top: 0;
-    left: 0;
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 50, 0, 0.50);
 }
 
-    /* CONTENT */
+/* CONTENT */
 .ewindo-container .ewindo-content {
     position: relative;
     z-index: 3;
-    padding: 58px 60px;
-    padding-left: 200px; 
+    padding: 50px 50px;
+    padding-left: 200px;
 }
-
 .ewindo-container .ewindo-content h2 {
     color: white;
     font-size: 31px;
     font-weight: 800;
     margin-bottom: 12px;
-    
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2817ba2ee3249ff658a519e9fc7fc0699537851d
 }
-
 .ewindo-container .ewindo-content h2 span {
     color: #aeea47;
 }
-
 .ewindo-container .ewindo-content p {
     color: white;
     font-size: 16px;
@@ -149,295 +130,115 @@
 }
 
 /* KEUNTUNGAN MITRA SECTION */
-    .mitra-container {
+.mitra-container {
     background-color: #ffffff;
-    padding:10px 0;
-    }
+    padding: 10px 0;
+}
+.mitra-container .mitra-item h2 {
+    padding: 0px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.0rem;
+    width: 100%;
+}
+.mitra-container .mitra-item h2 span {
+    padding: 0px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    width: 100%;
+    color: #87c51d;
 
-    .mitra-container .mitra-item h2 {
-        padding: 0px 0;
-        text-align: center;
-        font-weight: 700;
-        font-size: 1.5rem;
-        width:  100%;
-        justify-content: center;
-    }
+}
+.mitra-container .mitra-item p {
+    padding: 30px 150px;
+    text-align: center;
+}
 
-    .mitra-container .mitra-item h2 span {
-        padding: 0px 0;
-        text-align: center;
-        font-weight: 700;
-        font-size: 2.0rem;
-        width: 100%;
-        color: #87c51d;
-
-    }
-    .mitra-container .mitra-item p {
-        padding: 30px 150px;
-        text-align: center;
-    }
-
-    /* BENEFIT SECTION */
-    .benefit-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: stretch;
-        padding: 40px 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .benefit-container .benefit-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 20%;
-        margin: 0 15px;
-    }
-
-    .benefit-container .benefit-item p {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #000000;
-        margin-bottom: 15px;
-        min-height: 40px;
-        line-height: 1.2;
-    }
-
-    .benefit-container .benefit-item img {
-    max-width: 500px; 
+/* BENEFIT SECTION */
+.benefit-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 40px 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.benefit-container .benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    margin: 0 15px;
+}
+.benefit-container .benefit-item p {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 15px;
+    min-height: 40px;
+    line-height: 1.2;
+}
+.benefit-container .benefit-item img {
+    max-width: 500px;
     height: auto;
     display: block;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
-    }
-    .benefit-container .benefit-item:nth-child(1) img,
-    .benefit-container .benefit-item:nth-child(2) img {
-        max-width: 500px;
-    }
-    .benefit-container .benefit-item:nth-child(3) img,
-    .benefit-container .benefit-item:nth-child(4) img {
-        max-width: 160px;
-    }
-    .benefit-container .benefit-item {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-/* JOIN MITRA */
-    /* WRAPPER */
-    .join-mitra-container {
-        margin: 0;
-        text-align: center;
-        padding: 50px 50px;
-        background-color: #f4f4f4;
-    }
-
-    /* TITLE */
-    .join-mitra-container .desc-join-mitra h1 {
-        font-size: 2.2rem;
-        font-weight: 800; 
-        color: #000000;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    /* GARIS */
-    .join-mitra-container .garis-title {
-        border-top: 4px solid #030101;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        width: 70%;
-        opacity: 100;
-
-    }
-
-    /* PARAGRAF */
-    .join-mitra-container .desc-join-mitra p {
-        font-size: 1rem;
-        line-height: 1.6;
-        color: #000000;
-        padding: 17px 96px;
-        margin: 0 auto 30px auto;
-        margin-top: 30px;
-    }
-
-    /*button*/
-    .join-mitra-container .button-mitra a {
-        text-align: center;
-        margin: 30px 0;
-        text-decoration: none;
-        color: #ffffff;
-    }
-    
-
-    .cta-button .btn-main-hijau:hover {
-        background: #4a6a3e;
-        transform: translateY(-2px);
-        box-shadow: 0 16px 30px rgba(85, 121, 71, 0.6);
-    }
-
-    .cta-button.btn-main-hijau:active {
-        background: #3c5432;
-        transform: translateY(0);
-        box-shadow: 0 4px 10px rgba(85, 121, 71, 0.3);
-    }
-
-    /* ============ RESPONSIVE TABLET (max-width: 992px) ============ */
-    @media (max-width: 992px) {
-
-        .container-daftar,
-        .daftar-container,
-        .ewindo-container,
-        .mitra-container,
-        .benefit-container,
-        .join-mitra-container {
-            padding: 30px 10px;
-    }
-
-    .container-daftar {
-        padding: 10px 50px;
-    }
-
-    .daftar-container {
-        padding: 10px 50px;
-    }
-
-    .mitra-container .mitra-item p, 
-    .join-mitra-container .desc-join-mitra p {
-        padding: 10px 10px;
-    }
-
-    .daftar-container .desc-daftar-mitra {
-        flex-direction: column; 
-        gap: 20px;
-    }
-
-    .daftar-container .desc-daftar-mitra h1{
-        width: 100%; 
-        text-align: center;
-        padding: 30px 10px;
-    }
-
-    .daftar-container .desc-daftar-mitra p {
-        width: 100%; 
-        text-align: center; 
-        padding: 10px 5px;
-    }
-
-    .ewindo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 10px;
-    min-height: 600px; 
-    }
-
-    .ewindo-container .ewindo-card {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    max-width: 900px; 
-    width: 90%; 
-    position: relative;
-    }
-
-    .ewindo-container .logo-circle {
-    width: 250px; 
-    height: 250px;
-    border-radius: 50%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5; 
-    }
-
-    .ewindo-container .logo-circle img {
-    width: 75%; 
-    height: 75%;
-    object-fit: contain;
-    border-radius: 50%; 
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    }
-
-    .ewindo-container .ewindo-right {
-    flex: 1;
-    transform: translateX(65px);
-    height: 400px;
+}
+.benefit-container .benefit-item:nth-child(1) img,
+.benefit-container .benefit-item:nth-child(2) img {
+    max-width: 500px;
+}
+.benefit-container .benefit-item:nth-child(3) img,
+.benefit-container .benefit-item:nth-child(4) img {
+    max-width: 160px;
+}
+.benefit-container .benefit-item {
     width: 100%;
-    border-radius: 40px;
-    overflow: hidden;
-    position: relative;
-    margin-top: -125px;
-    padding-top: 125px; 
-    }
-
-    .ewindo-container .ewindo-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 1; 
-    }
-
-    .ewindo-container .ewindo-bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    }
-
-    .ewindo-container .bg-gradient {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 50, 0, 0.50);
-    z-index: 2; 
-    }
-
-    .ewindo-container .ewindo-content {
-    position: relative;
-    z-index: 3; 
-    padding: 30px 60px; 
-    color: white; 
-    text-align: left;
-    }
-
-    .ewindo-container .ewindo-content h2 {
-    color: white;
-    font-size: 30px; 
-    font-weight: 800;
-    margin-bottom: 12px;
-    }
-
-    .ewindo-container .ewindo-content h2 span {
-    color: #9cd737;
-    }
-
-    .ewindo-container .ewindo-content p {
-    color: white;
-    font-size: 16px;
-    line-height: 1.6;
-    }
-
-    .benefit-container {
-        flex-wrap: wrap; 
-        justify-content: space-around;
-        padding: 10x 10px;
-    }
-    
-    .benefit-container .benefit-item {
-        width: 45%; 
-        margin: 15px 5px;
-    }
-    
-    .benefit-container .benefit-item p {
-        font-size: 1.1rem; 
-    }
-
+    margin-bottom: 30px;
 }
 
-    @media (max-width: 480px) {
+/* JOIN MITRA */
+.join-mitra-container {
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.join-mitra-container .desc-join-mitra h2 {
+    font-size: 2.0rem;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.join-mitra-container .garis-title {
+    border-top: 4px solid #030101;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    opacity: 100;
+
+}
+.join-mitra-container .desc-join-mitra p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000000;
+    padding: 20px 150px;
+}
+.join-mitra-container .button-mitra a {
+    text-align: center;
+    margin: 30px 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* ============ RESPONSIVE (max-width: 992px) ============ */
+@media (max-width: 992px) {
+<<<<<<< HEAD
     .banner-daftar {
         padding: 65px 0;
         height: 175px;
@@ -445,73 +246,302 @@
 
     .container-daftar,
     .daftar-container,
+    .ewindo-container,
+    .mitra-container,
+    .benefit-container,
+    .join-mitra-container {
+        padding: 30px 10px;
+    }
+
+    /*SECTION DAFTAR*/
+    .container-daftar {
+        padding: 10px 50px;
+=======
+    .container-daftar{
+        height: 175px;
+    }
+    .banner-daftar {
+        padding: 65px 0;
+        height: 175px;
+>>>>>>> 2817ba2ee3249ff658a519e9fc7fc0699537851d
+    }
+    .daftar-container {
+        padding: 10px 80px;
+    }
+    .daftar-container .desc-daftar-mitra {
+        flex-direction: column;
+        gap: 1px;
+    }
+    .daftar-container .desc-daftar-mitra h1 {
+        width: 100%;
+        padding: 30px 10px;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .daftar-container .desc-daftar-mitra p {
+        width: 100%;
+        padding: 10px 5px;
+        text-align: center;
+    }
+    
+    /*CARD*/
+    .ewindo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ewindo-container .ewindo-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 900px;
+        width: 90%;
+        position: relative;
+    }
+    .ewindo-container .logo-circle {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+    }
+    .ewindo-container .logo-circle img {
+        width: 75%;
+        height: 75%;
+        object-fit: contain;
+        border-radius: 50%;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    .ewindo-container .ewindo-right {
+        flex: 1;
+        transform: translateX(65px);
+        height: 400px;
+        width: 100%;
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+        margin-top: -125px;
+        padding-top: 125px;
+    }
+    .ewindo-container .ewindo-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+    .ewindo-container .ewindo-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .ewindo-container .bg-gradient {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 50, 0, 0.50);
+        z-index: 2;
+    }
+
+    /*CONTENT CARD*/
+    .ewindo-container .ewindo-content {
+        position: relative;
+        z-index: 3;
+        padding: 30px 60px;
+        color: white;
+        text-align: left;
+    }
+    .ewindo-container .ewindo-content h2 {
+        color: white;
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .ewindo-container .ewindo-content h2 span {
+        color: #9cd737;
+    }
+    .ewindo-container .ewindo-content p {
+        color: white;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /*BENNEFIT*/
+    .benefit-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .benefit-container .benefit-item {
+        width: 45%;
+        margin: 15px 5px;
+    }
+    .benefit-container .benefit-item p {
+        font-size: 1.1rem;
+    }
+
+    /*SECTION TERAKHIR*/
+    .join-mitra-container .desc-join-mitra h2 {
+        font-size: 1.5rem;
+        padding: 5px 90px;
+    }
+    .join-mitra-container .garis-title {
+    width: 75%;
+
+    }.mitra-container .mitra-item p,
+    .join-mitra-container .desc-join-mitra p {
+        padding: 10px 55px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ============ RESPONSIVE (max-width: 768px) ============ */
+@media (max-width: 768px) {
+<<<<<<< HEAD
+    .container-daftar,
+    .daftar-container,
+    .ewindo-container,
+    .mitra-container,
+    .benefit-container,
+    .join-mitra-container {
+        padding: 20px 10px;
+=======
+    .banner-daftar {
+        padding: auto;
+        height: 175px;
+    }
+    .daftar-container .desc-daftar-mitra h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 15px 1px;
+>>>>>>> 2817ba2ee3249ff658a519e9fc7fc0699537851d
+    }
+
+    .daftar-container .desc-daftar-mitra p {
+        font-size: 1.0rem;
+        padding: 10px 45px;
+    }
+
+    /*CARD*/
+    .ewindo-container {
+
+        padding: 20px 10px;
+    }
+    .ewindo-container .ewindo-card {
+        width: 90%;
+    }
+    .ewindo-container .logo-circle {
+        width: 220px;
+        height: 220px;
+    }
+    .ewindo-container .logo-circle img {
+        width: 72%;
+        height: 72%;
+    }
+    .ewindo-container .ewindo-right {
+        height: 360px;
+        border-radius: 30px;
+        margin-top: -110px;
+        padding-top: 110px;
+        transform: translateX(55px);
+    }
+    .ewindo-container .ewindo-content {
+        padding: 25px 40px;
+        text-align: center;
+    }
+
+    /*MITRA BENNEFIT DESC*/
+    .mitra-container .mitra-item h2 {
+        font-size: 1.3rem;
+    }
+    .mitra-container .mitra-item h2 span {
+        font-size: 2.0rem;
+    }
+
+    .benefit-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .benefit-container .benefit-item {
+        width: 48%;
+        margin: 10px 5px;
+    }
+    .benefit-container .benefit-item p {
+        font-size: 1rem;
+    }
+
+    /*JOIN MITRA*/
+    .join-mitra-container .desc-join-mitra h2{
+        font-size: 1.5rem;
+    }
+}
+
+/* ============ RESPONSIVE (max-width: 480px) ============ */
+@media (max-width: 480px) {
+    .banner-daftar {
+        padding: auto;
+        height: 175px;
+    }
+
+    .container-daftar,
+    .daftar-container,
     .mitra-container .mitra-item p,
     .join-mitra-container .desc-join-mitra p {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 10px;
+        padding-right: 17px;
     }
 
     .daftar-container .desc-daftar-mitra h1 {
-        font-size: 2rem; 
+        font-size: 1.3rem;
+        padding: 10px 50px;
+    }
+    .daftar-container .desc-daftar-mitra p {
+        font-size: 0.9rem;
+        padding: 10px 15px;
     }
 
-    .ewindo-container {
-        padding: 30px 10px;
-        min-height: 500px;
-    }
-
+    /*SECTION CARD*/
     .ewindo-container .ewindo-card {
-        width: 95%; 
+        width: 95%;
     }
-
     .ewindo-container .logo-circle {
-        width: 180px; 
+        width: 180px;
         height: 180px;
     }
-
-    .ewindo-container .logo-circle img {
-        width: 70%;
-        height: 70%;
-        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    }
-
-    .ewindo-container .ewindo-right {
-        height: 300px; 
-        border-radius: 20px; 
-        margin-top: -90px; 
-        padding-top: 90px; 
-        transform: translateX(60px);
-    }
-
-    .ewindo-container .ewindo-content {
-        padding: 20px 30px; 
-        text-align: center; 
-    }
-
     .ewindo-container .ewindo-content h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
-
     .ewindo-container .ewindo-content p {
         font-size: 15px;
     }
 
+    /*BENNEFIT*/
     .benefit-container {
         flex-direction: column;
         padding: 20px 0;
     }
-    
     .benefit-container .benefit-item {
-        width: 100%; 
+        width: 100%;
         margin: 10px 0;
     }
+    .mitra-container .mitra-item h2 {
+        font-size: 18px;
+    }
+    .mitra-container .mitra-item h2 span {
+        font-size: 24px;
+    }
 
-    
-    .join-mitra-container .desc-join-mitra h1 {
-        font-size: 1.8rem;
+/*SECTION AKHIR*/
+    .join-mitra-container .desc-join-mitra h2 {
+        font-size: 1.3rem;
+        padding: 5px 15px;
     }
-    
     .join-mitra-container .garis-title {
-        width: 90%;
+        width: 80%;
     }
+    .mitra-container .mitra-item p, .join-mitra-container .desc-join-mitra p {
+        padding: 5px 10px;
+    }
+
 }

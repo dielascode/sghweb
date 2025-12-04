@@ -61,25 +61,4 @@ function sendToWA(e) {
 
 
 
-// layanan-magang.html
-// const observers = document.querySelectorAll('.fade-up, .slide-left, .slide-right, .slide-up');
 
-// const options = {
-//   threshold: 0.8
-// };
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach(entry => {
-//     if(entry.isIntersecting){
-//       entry.target.classList.add('show');
-//     }
-//   });
-// }, options);
-
-// observers.forEach(el => observer.observe(el));
-
-AOS.init({
-    duration: 800,     // durasi animasi
-    offset: 120,       // jarak scroll sebelum animasi mulai
-    once: true,        // animasi muncul sekali saja
-  });   
