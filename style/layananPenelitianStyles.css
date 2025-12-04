@@ -112,7 +112,7 @@
 }
 
 .circle-penelitian::after {
-     content: "";
+    content: "";
     position: absolute;
     left: 50%;
     top: 100%;
@@ -192,10 +192,8 @@
     padding: 10px 30px;
     display: flex;
     gap: 45px;
-
-
 }
-.penelitian3-right .btn-penelitian-hijau .btn-penelitian a {
+.penelitian3-right .btn-penelitian-hijau  .btn-penelitian a {
         color: white;
         text-decoration: none;
     }

@@ -10,15 +10,16 @@
     border-radius: 20px;
     text-align: center;
 }
-
 .container-daftar {
-    padding: 10px 150px;
     text-align: center;
     color: white;
 }
 
 /* DAFTAR MITRA SECTION */
 .daftar-container {
+    text-align: center;
+    width: 100%;
+    padding: 65px 10px;
     background-color: #ffffff;
     padding: 50px 150px;
 }
@@ -114,7 +115,10 @@
     font-size: 31px;
     font-weight: 800;
     margin-bottom: 12px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2817ba2ee3249ff658a519e9fc7fc0699537851d
 }
 .ewindo-container .ewindo-content h2 span {
     color: #aeea47;
@@ -234,6 +238,7 @@
 
 /* ============ RESPONSIVE (max-width: 992px) ============ */
 @media (max-width: 992px) {
+<<<<<<< HEAD
     .banner-daftar {
         padding: 65px 0;
         height: 175px;
@@ -251,6 +256,14 @@
     /*SECTION DAFTAR*/
     .container-daftar {
         padding: 10px 50px;
+=======
+    .container-daftar{
+        height: 175px;
+    }
+    .banner-daftar {
+        padding: 65px 0;
+        height: 175px;
+>>>>>>> 2817ba2ee3249ff658a519e9fc7fc0699537851d
     }
     .daftar-container {
         padding: 10px 80px;
@@ -385,6 +398,7 @@
 
 /* ============ RESPONSIVE (max-width: 768px) ============ */
 @media (max-width: 768px) {
+<<<<<<< HEAD
     .container-daftar,
     .daftar-container,
     .ewindo-container,
@@ -392,6 +406,16 @@
     .benefit-container,
     .join-mitra-container {
         padding: 20px 10px;
+=======
+    .banner-daftar {
+        padding: auto;
+        height: 175px;
+    }
+    .daftar-container .desc-daftar-mitra h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 15px 1px;
+>>>>>>> 2817ba2ee3249ff658a519e9fc7fc0699537851d
     }
 
     .daftar-container .desc-daftar-mitra p {
@@ -456,9 +480,8 @@
 /* ============ RESPONSIVE (max-width: 480px) ============ */
 @media (max-width: 480px) {
     .banner-daftar {
-        padding: 65px 0;
+        padding: auto;
         height: 175px;
-        text-align: center;
     }
 
     .container-daftar,
