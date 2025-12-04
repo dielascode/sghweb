@@ -85,7 +85,8 @@ button:disabled {
 
 @media (max-width: 992px) {
     .banner-galeri {
-        padding: 100px 0;
+        padding: 65px 0;
+        height: 175px;
     }
 
     .gallery-container {
@@ -98,6 +99,10 @@ button:disabled {
 }
 
 @media (max-width: 768px) {
+    .banner-galeri{
+        padding: auto;
+        height: 175px;
+    }
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
         padding: 40px 40px;
@@ -105,6 +110,10 @@ button:disabled {
 }
 
 @media (max-width: 480px) {
+    .banner-galeri{
+        padding: auto;
+        height: 175px;
+    }
     .gallery-container {
         grid-template-columns: 1fr;
         padding: 20px 20px;
