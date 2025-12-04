@@ -1,5 +1,5 @@
 .banner-galeri {
-     background-image:
+    background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('/images/bannerfiks.jpg');
     background-size: cover;
@@ -13,9 +13,6 @@
 
 .container-galeri {
     padding: 10px 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     text-align: center;
     color: white;
 }
@@ -34,6 +31,7 @@
 }
 
 .gallery-container {
+     background-image: linear-gradient( white, rgb(196, 252, 99), white);
     padding: 40px 150px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
