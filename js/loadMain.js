@@ -57,21 +57,3 @@ function sendToWA(e) {
 
     window.open(`https://wa.me/${nomor}?text=${text}`);
 }
-// ini buat tentang kami
-// function revealOnScroll() {
-//     const reveals = document.querySelectorAll('.reveal, .zoom-in');
-
-//     reveals.forEach(el => {
-//         const windowHeight = window.innerHeight;
-//         const elementTop = el.getBoundingClientRect().top;
-//         const revealPoint = 100;
-
-//         if (elementTop < windowHeight - revealPoint) {
-//             el.classList.add('active');
-//         }
-//     });
-// }
-
-// window.addEventListener('scroll', revealOnScroll);
-// window.addEventListener('load', revealOnScroll);
-// window.addEventListener('click',revealOnScroll);
