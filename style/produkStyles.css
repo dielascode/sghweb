@@ -206,8 +206,9 @@
     transition: 0.2s;
 }
 
-.btn-pesan:hover {
-    background: #567734;
+.btn-pesan a {
+    color: white;
+    text-decoration: none;
 }
 
 /* RESPONSIVE */

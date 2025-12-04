@@ -30,8 +30,11 @@
     gap: 20px;
 }
 
-.footer .footer1 .sosmed i {
+.footer .footer1 .sosmed a{
     font-size: 25px;
+    color: white;
+    text-decoration: none;
+    
 }
 
 .footer .footer2 {
@@ -61,6 +64,10 @@
     color: #ffffff;
     text-align: center;
     padding: 10px;
+}
+.footer .bottom-footer a {
+    color: white;
+    text-decoration: none;
 }
 
 @media (max-width: 992px) {
