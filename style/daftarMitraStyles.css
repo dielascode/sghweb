@@ -57,7 +57,7 @@
     position: relative;
 }
 
-/* LOGO */
+    /* LOGO */
 .ewindo-container .logo-circle {
     width: 330px;
     height: 330px;
@@ -84,7 +84,7 @@
     z-index: 3;
 }
 
-/* BG FOTO */
+    /* BG FOTO */
 .ewindo-container .ewindo-bg {
     position: absolute;
     inset: 0;
@@ -102,7 +102,7 @@
     background-color: rgba(0, 50, 0, 0.50);
 }
 
-/* CONTENT */
+    /* CONTENT */
 .ewindo-container .ewindo-content {
     position: relative;
     z-index: 3;
@@ -150,11 +150,9 @@
     text-align: center;
 }
 
-/* BENEFIT SECTION */
+    /* BENEFIT SECTION */
 .benefit-container {
     display: flex;
-    justify-content: space-around;
-    align-items: stretch;
     padding: 40px 150px;
     max-width: 1200px;
     margin: 0 auto;
@@ -277,45 +275,17 @@
         align-items: center;
     }
     .ewindo-container .ewindo-card {
-        display: flex;
         flex-direction: column;
-        align-items: center;
         max-width: 900px;
         width: 90%;
-        position: relative;
     }
-    .ewindo-container .logo-circle {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        background: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 5;
-    }
-    .ewindo-container .logo-circle img {
-        width: 75%;
-        height: 75%;
-        object-fit: contain;
-        border-radius: 50%;
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    }
+
     .ewindo-container .ewindo-right {
-        flex: 1;
         transform: translateX(65px);
-        height: 400px;
         width: 100%;
         border-radius: 40px;
-        overflow: hidden;
-        position: relative;
         margin-top: -125px;
         padding-top: 125px;
-    }
-    .ewindo-container .ewindo-bg {
-        position: absolute;
-        inset: 0;
-        z-index: 1;
     }
     .ewindo-container .ewindo-bg img {
         width: 100%;
@@ -331,26 +301,13 @@
 
     /*CONTENT CARD*/
     .ewindo-container .ewindo-content {
-        position: relative;
-        z-index: 3;
         padding: 30px 60px;
-        color: white;
-        text-align: left;
     }
     .ewindo-container .ewindo-content h2 {
-        color: white;
         font-size: 30px;
-        font-weight: 800;
-        margin-bottom: 12px;
         text-align: center;
     }
-    .ewindo-container .ewindo-content h2 span {
-        color: #9cd737;
-    }
     .ewindo-container .ewindo-content p {
-        color: white;
-        font-size: 16px;
-        line-height: 1.6;
         text-align: center;
     }
 
